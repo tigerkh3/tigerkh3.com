@@ -1,0 +1,22 @@
+{
+  "name": "tigerkh3.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigerkh3/tigerkh3.io.git"
+  },
+  "author": "tigerkh3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tigerkh3/tigerkh3.io/issues"
+  },
+  "homepage": "https://github.com/tigerkh3/tigerkh3.io#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
