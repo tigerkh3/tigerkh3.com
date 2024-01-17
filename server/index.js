@@ -1,5 +1,11 @@
-function sum(a, b) {
-  return a + b
-}
+const express = require("express")
+const app = express();
+const port = 6001;
 
-module.exports = sum;
+app.get("/", (req, res) => {
+  res.send("hello world");
+})
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`)
+})

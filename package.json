@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tigerkh3/tigerkh3.io#readme",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
