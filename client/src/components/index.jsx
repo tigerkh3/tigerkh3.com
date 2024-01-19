@@ -1,11 +1,12 @@
 // import react
 import React from "react";
 
+// parent components will live here
 
 function App () {
-  return (
+  return ([
     <div> Hello World! </div>
-  )
+  ])
 }
 
 export default App;
