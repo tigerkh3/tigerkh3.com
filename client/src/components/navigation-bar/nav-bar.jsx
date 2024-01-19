@@ -1,7 +1,7 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// parent components will live here
-
+// Navigation Bar Component
 function NavBar () {
   return ([
     <div> Nav Bar </div>

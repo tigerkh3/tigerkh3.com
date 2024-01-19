@@ -1,10 +1,10 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// parent components will live here
-
+// about-me component
 function AboutMe () {
   return ([
-    <div> Hello World! </div>
+    <div> About Me </div>
   ])
 }
 
