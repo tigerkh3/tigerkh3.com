@@ -1,5 +1,8 @@
+/* Application CSS file */
+
+/* Home Page CSS */
 .home-parent {
-  border: solid black 1px;
+  border: solid orange 1px;
   height: 100vh;
   padding: 0;
 }
@@ -10,19 +13,39 @@
   min-width: 100%;
 }
 
-.tabs {
-  color: white;
-}
-
-.about-me-parent {
-  min-width: 80%;
-  border: solid black 1px;
-  min-height: 30%;
-}
+/* Navigation Bar CSS */
 
 .nav-link {
   padding-top: 8;
   padding-left: 8;
   padding-bottom: 8;
   padding-left: 0;
+}
+
+.nav-bar-brand {
+  color: lightgray
+}
+
+.tabs {
+  color: lightgray;
+}
+
+/* About Me CSS */
+
+.about-me-parent {
+  min-width: 80%;
+  border: solid blue 1px;
+  height: 30%;
+}
+
+.about-me-description {
+  border: solid green 1px;
+  height: 75%;
+  position: relative;
+  transform: translate(0, 12.5%);
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 600;
+  background: black;
+  color: lightgray;
 }

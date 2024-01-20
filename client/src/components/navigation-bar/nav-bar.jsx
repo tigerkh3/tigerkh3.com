@@ -11,7 +11,7 @@ import navItems from "./sample/nav-items.js";
 function NavBar () {
   return ([
     <Navbar className="nav-bar" color="dark">
-      <NavbarBrand className="nav-bar home-ref" href="/">
+      <NavbarBrand className="nav-bar-brand home-ref" href="/">
         tigerkh3.io
       </NavbarBrand>
       <Nav className="nav">
