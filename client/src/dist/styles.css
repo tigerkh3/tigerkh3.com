@@ -1,0 +1,28 @@
+.home-parent {
+  border: solid black 1px;
+  height: 100vh;
+  padding: 0;
+}
+
+
+.home-ref {
+  color: white;
+  min-width: 100%;
+}
+
+.tabs {
+  color: white;
+}
+
+.about-me-parent {
+  min-width: 80%;
+  border: solid black 1px;
+  min-height: 30%;
+}
+
+.nav-link {
+  padding-top: 8;
+  padding-left: 8;
+  padding-bottom: 8;
+  padding-left: 0;
+}

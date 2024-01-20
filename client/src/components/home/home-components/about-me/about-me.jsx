@@ -1,10 +1,15 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// css styles and reactstrap components
+import "../../../../dist/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "reactstrap";
 
 // about-me component
 function AboutMe () {
   return ([
-    <div> About Me </div>
+    <Container className="about-me-parent">
+      About Me
+    </Container>
   ])
 }
 
