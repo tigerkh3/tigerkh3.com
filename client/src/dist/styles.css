@@ -48,3 +48,11 @@
   color: lightgray;
   overflow: auto;
 }
+
+/* Projects Display CSS */
+
+.projects-display-parent {
+  border: solid red 1px;
+  padding: 25% 12.5% 25% 12.5%;
+  text-align: center;
+}
