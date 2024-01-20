@@ -35,17 +35,16 @@
 .about-me-parent {
   min-width: 80%;
   border: solid blue 1px;
-  height: 30%;
+  padding: 2.5% 2.5% 2.5% 2.5%;
 }
 
 .about-me-description {
   border: solid green 1px;
-  height: 75%;
   position: relative;
-  transform: translate(0, 12.5%);
   margin-left: 5%;
   margin-right: 5%;
   font-weight: 600;
   background: black;
   color: lightgray;
+  overflow: auto;
 }
