@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import components
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 // Nav Bar Items
-import navItems from "./nav-bar-items/nav-items.js";
+import navItems from "./sample/nav-items.js";
 
 // Navigation Bar Component
 function NavBar () {

@@ -1,7 +1,9 @@
-.appHome {
+.home-parent {
   border: solid black 1px;
-  min-height: 100vh;
+  height: 100vh;
+  padding: 0;
 }
+
 
 .home-ref {
   color: white;
@@ -10,6 +12,12 @@
 
 .tabs {
   color: white;
+}
+
+.about-me-parent {
+  min-width: 80%;
+  border: solid black 1px;
+  min-height: 30%;
 }
 
 .nav-link {
