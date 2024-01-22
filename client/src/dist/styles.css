@@ -26,12 +26,12 @@
 
 /* About Me CSS */
 
-.about-me-parent {
+.about-me-home-parent {
   min-width: 80%;
   padding: 5% 15%;
 }
 
-.about-me-description {
+.about-me-home-description {
   position: relative;
   font-weight: 600;
   background: black;
@@ -41,7 +41,7 @@
 
 /* Projects Display CSS */
 
-.projects-display-parent {
+.projects-display-home-parent {
   border: solid red 1px;
   text-align: center;
   max-height: 99%;
@@ -49,35 +49,35 @@
 
 /* Projects Card CSS */
 
-.projects-cards-display {
+.projects-cards-display-home {
   border: solid blue 1px;
   padding: 0% 2.5% 2.5%;
 }
 
-.card {
+.card-home {
   border: none;
   margin: 2.5% 0% 0%;
 }
 
-.card-title {
+.card-home-title {
   padding: 5%;
   margin: 0;
 }
 
-.card-row {
+.card-home-row {
   margin: 1%;
   margin: 0;
   border: solid gray 1px;
 }
 
-.card-description {
-  text-align: justify;
+.card-home-description {
+  text-align: center;
   padding: 7.5%;
   margin: 0;
 
 }
 
-.card-link-wl, .card-link-gh {
+.card-link-home-wl, .card-link-home-gh {
   border: solid pink 1px;
   margin: 5%;
 }

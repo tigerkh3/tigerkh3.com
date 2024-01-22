@@ -2,15 +2,16 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: path.resolve(__dirname, "client", "app.jsx"),
+  entry: path.resolve(__dirname, "client", "root.jsx"),
   output: {
-    path: path.resolve(__dirname, "client", "dist"),
+    path: path.resolve(__dirname, "client", "src", "dist"),
     filename: "bundle.js"
   },
   devServer: {
     static: path.resolve(__dirname, "client", "src", "dist"),
     hot: true,
     port: 3000,
+    historyApiFallback: true,
   },
   module: {
     rules: [
