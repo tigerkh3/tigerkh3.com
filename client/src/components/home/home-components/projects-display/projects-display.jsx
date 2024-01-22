@@ -11,8 +11,8 @@ import ProjectCard from './pd-components/project-card.jsx';
 // projects-display component
 function ProjectsDisplay () {
   return ([
-    <Container key="projects-display" className="projects-display-parent">
-      <Row key="projects-display-row" className="projects-cards-display">
+    <Container key="projects-display-home" className="projects-display-home-parent">
+      <Row key="projects-display-home-row" className="projects-cards-display-home">
         {sampleCard.map( (currentProj, index) => {
           return(
             <ProjectCard key={`project-card-${index}`} index={`${index}`} project={currentProj}></ProjectCard>

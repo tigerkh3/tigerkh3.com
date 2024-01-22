@@ -18,7 +18,7 @@ function NavBar () {
         {navItems.map( (currentLink, index) => {
           return(
             <NavItem key={`nav-item-${index}`}>
-              <NavLink key={`nav-tab-${index}`} className="tabs"> {currentLink} </NavLink>
+              <NavLink href={currentLink.href} key={`nav-tab-${index}`} className="tabs"> {currentLink.name} </NavLink>
             </NavItem>
           )
         })}

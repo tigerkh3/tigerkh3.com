@@ -8,14 +8,14 @@ import { Container, Row } from "reactstrap";
 import sampleAM from "./sample/about-me-sample.js"
 
 // about-me component
-function AboutMe () {
+function AboutMeHome () {
   return ([
-    <Container key="about-me" className="about-me-parent">
-      <Row key="about-me-row" className="about-me-description">
+    <Container key="about-me-home" className="about-me-home-parent">
+      <Row key="about-me-home-row" className="about-me-home-description">
         {sampleAM.description}
       </Row>
     </Container>
   ])
 }
 
-export default AboutMe;
+export default AboutMeHome;
