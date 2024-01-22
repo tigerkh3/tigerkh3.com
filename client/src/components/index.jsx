@@ -12,9 +12,9 @@ import NavBar from "./navigation-bar/nav-bar.jsx";
 // Overaching App Component
 function App () {
   return ([
-    <Container className="home-parent">
-      <NavBar/>
-      <Home/>
+    <Container key="home-parent" className="home-parent">
+      <NavBar key="NavBar"/>
+      <Home key="Home"/>
     </Container>
   ])
 }

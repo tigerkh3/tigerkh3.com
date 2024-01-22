@@ -10,8 +10,8 @@ import sampleAM from "./sample/about-me-sample.js"
 // about-me component
 function AboutMe () {
   return ([
-    <Container className="about-me-parent">
-      <Row className="about-me-description">
+    <Container key="about-me" className="about-me-parent">
+      <Row key="about-me-row" className="about-me-description">
         {sampleAM.description}
       </Row>
     </Container>
