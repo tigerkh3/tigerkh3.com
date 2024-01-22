@@ -10,15 +10,15 @@ import navItems from "./sample/nav-items.js";
 // Navigation Bar Component
 function NavBar () {
   return ([
-    <Navbar className="nav-bar" color="dark">
-      <NavbarBrand className="nav-bar home-ref" href="/">
+    <Navbar key="nav-bar" className="nav-bar" color="dark">
+      <NavbarBrand key="nav-bar-brand" className="nav-bar-brand" href="/">
         tigerkh3.io
       </NavbarBrand>
-      <Nav className="nav">
+      <Nav key="nav" className="nav">
         {navItems.map( (currentLink, index) => {
           return(
-            <NavItem>
-              <NavLink className="tabs"> {currentLink} </NavLink>
+            <NavItem key={`nav-item-${index}`}>
+              <NavLink key={`nav-tab-${index}`} className="tabs"> {currentLink} </NavLink>
             </NavItem>
           )
         })}

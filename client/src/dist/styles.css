@@ -1,24 +1,12 @@
+/* Application CSS file */
+
+/* Home Page CSS */
 .home-parent {
-  border: solid black 1px;
-  height: 100vh;
+  border: solid orange 1px;
   padding: 0;
 }
 
-
-.home-ref {
-  color: white;
-  min-width: 100%;
-}
-
-.tabs {
-  color: white;
-}
-
-.about-me-parent {
-  min-width: 80%;
-  border: solid black 1px;
-  min-height: 30%;
-}
+/* Navigation Bar CSS */
 
 .nav-link {
   padding-top: 8;
@@ -26,3 +14,72 @@
   padding-bottom: 8;
   padding-left: 0;
 }
+
+.nav-bar-brand {
+  color: lightgray;
+  min-width: 100%;
+}
+
+.tabs {
+  color: lightgray;
+}
+
+/* About Me CSS */
+
+.about-me-parent {
+  min-width: 80%;
+  padding: 5% 15%;
+}
+
+.about-me-description {
+  position: relative;
+  font-weight: 600;
+  background: black;
+  color: lightgray;
+  overflow: auto;
+}
+
+/* Projects Display CSS */
+
+.projects-display-parent {
+  border: solid red 1px;
+  text-align: center;
+  max-height: 99%;
+}
+
+/* Projects Card CSS */
+
+.projects-cards-display {
+  border: solid blue 1px;
+  padding: 0% 2.5% 2.5%;
+}
+
+.card {
+  border: none;
+  margin: 2.5% 0% 0%;
+}
+
+.card-title {
+  padding: 5%;
+  margin: 0;
+}
+
+.card-row {
+  margin: 1%;
+  margin: 0;
+  border: solid gray 1px;
+}
+
+.card-description {
+  text-align: justify;
+  padding: 7.5%;
+  margin: 0;
+
+}
+
+.card-link-wl, .card-link-gh {
+  border: solid pink 1px;
+  margin: 5%;
+}
+
+

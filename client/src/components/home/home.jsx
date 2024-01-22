@@ -10,8 +10,8 @@ import ProjectsDisplay from "./home-components/projects-display/projects-display
 // home page parent component
 function Home () {
   return ([
-    <AboutMe/>,
-    <ProjectsDisplay/>
+    <AboutMe key="about-me"/>,
+    <ProjectsDisplay key="projects-diplay"/>
   ])
 }
 
