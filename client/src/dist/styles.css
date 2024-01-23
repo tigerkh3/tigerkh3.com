@@ -24,7 +24,7 @@
   color: lightgray;
 }
 
-/* About Me CSS */
+/* About Me Home CSS */
 
 .about-me-home-parent {
   min-width: 80%;
@@ -39,7 +39,7 @@
   overflow: auto;
 }
 
-/* Projects Display CSS */
+/* Projects Display Home CSS */
 
 .projects-display-home-parent {
   border: solid red 1px;
@@ -83,3 +83,20 @@
 }
 
 
+/* About Me CSS */
+
+.header {
+  padding-left: 5%;
+}
+
+.about-me-intro {
+  padding: 2.5% 5%;
+}
+
+.about-me-socials-intro {
+  margin: 0;
+}
+
+.li {
+  margin-bottom: 2.5%;
+}

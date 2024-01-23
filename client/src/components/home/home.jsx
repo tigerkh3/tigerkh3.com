@@ -9,10 +9,12 @@ import ProjectsDisplay from "./home-components/projects-display/projects-display
 
 // home page parent component
 function Home () {
-  return ([
-    <AboutMeHome key="about-me-home"/>,
-    <ProjectsDisplay key="projects-diplay"/>
-  ])
+  return (
+    <Container key="home-parent" className="home-parent">
+      <AboutMeHome key="about-me-home"/>,
+      <ProjectsDisplay key="projects-diplay"/>
+    </Container>
+  )
 }
 
 export default Home;

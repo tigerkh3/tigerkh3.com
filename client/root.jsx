@@ -3,7 +3,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 // import App from "./src/components/app.jsx";
 import Home from "./src/components/home/home.jsx"
-import AboutMe from "./src/components/about-me/index.jsx"
+import AboutMe from "./src/components/about-me/about-me.jsx"
 import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
