@@ -5,14 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "reactstrap";
 
 // import sample text
-import sampleAM from "./sample/about-me-sample.js"
+import sampleAM from "../../../about-me/sample/about-me-sample.js"
 
 // about-me component
 function AboutMeHome () {
   return ([
     <Container key="about-me-home" className="about-me-home-parent">
       <Row key="about-me-home-row" className="about-me-home-description">
-        {sampleAM.description}
+        {sampleAM.homePage}
       </Row>
     </Container>
   ])
