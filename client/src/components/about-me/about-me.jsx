@@ -1,6 +1,6 @@
 // import react
 import React from "react";
-import { Container } from "reactstrap";
+import { Container, Row } from "reactstrap";
 // import css and styling
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../dist/styles.css";
@@ -21,24 +21,36 @@ function AboutMe () {
               <p key={`about-me-intro-p-${index}`} className="about-me-intro-p"> {currentParagraph} </p>
             )
           })}
-          <div key="about-me-socials" className="about-me-socials">
-          <p key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </p>
-            <br></br>
-            <ul key="about-me-socials-list" className="about-me-socials-list list">
-              <li key="about-me-LinkedIn" className="about-me-LinkedIn li"> LinkedIn</li>
-              <li key="about-me-GitHub" className="about-me-GitHub li"> GitHub </li>
-            </ul>
+          <div key="about-me-socials-parent" className="about-me-socials-parent">
+            <p key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </p>
+            <div key="about-me-socials-links" className="about-me-socials-links">
+              <a href="https://linkedin.com/in/tigerkh3" target="blank" key="about-me-LinkedIn" className="about-me-LinkedIn link" > LinkedIn</a>
+              <br></br>
+              <br></br>
+              <a href="https://github.com/tigerkh3" target="blank" key="about-me-GitHub" className="about-me-GitHub link"> GitHub </a>
+              <br></br>
+            </div>
           </div>
         </div>
       </Container>
       <Container key="about-me-stack" className="about-me-stack">
         <h2 className="header"> Tech Stack </h2>
+        <div key="about-me-stack-parent" className="about-me-stack-parent">
+          <img key="JS-img" className="about-me-stack-img" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img key="React-img" className="about-me-stack-img" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <img key="Node-img" className="about-me-stack-img" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <img key="Mongo-img" className="about-me-stack-img" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+          <img key="Postgres-img" className="about-me-stack-img" alt="PostgreSQL" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png"/>
+          <img key="SQL-img" className="about-me-stack-img" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+          <img key="GH-img" className="about-me-stack-img gh-img" alt="GitHub" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" />
+          <img key="Term-img" className="about-me-stack-img" alt="Terminal" src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205154/terminal-icon-md.png" />
+        </div>
       </Container>
       <Container key="about-me-qualifications" className="about-me-qualifications-parent">
         <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
-        <ul key="about-me-qualifications" className="about-me-qualifications list">
-          <li key="about-me-resume" className="about-me-resume li"> Resume </li>
-        </ul>
+        <div className="about-me-qualifications">
+          <a key="about-me-resume" className="about-me-resume link"> Resume </a>
+        </div>
       </Container>
     </Container>
   )

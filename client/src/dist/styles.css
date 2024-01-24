@@ -27,7 +27,7 @@
 /* About Me Home CSS */
 
 .about-me-home-parent {
-  min-width: 80%;
+  width: fit-content;
   padding: 5% 15%;
 }
 
@@ -89,14 +89,36 @@
   padding-left: 5%;
 }
 
+.about-me-parent {
+  width: fit-content;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0% 10%;
+}
+
 .about-me-intro {
   padding: 2.5% 5%;
 }
 
-.about-me-socials-intro {
-  margin: 0;
-}
-
 .li {
   margin-bottom: 2.5%;
+  width: fit-content;
+}
+
+.about-me-stack-parent {
+  padding: 2.5% 0%;
+}
+
+.about-me-stack-img {
+  max-width: 5%;
+  max-height: 5%;
+  margin-left: 5%;
+}
+
+.gh-img {
+  background-color: black;
+}
+
+.about-me-qualifications {
+  padding-left: 5%;
 }
