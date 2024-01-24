@@ -1,6 +1,6 @@
 import React from "react";
 // import CSS styling and reactstrap components
-import "../../../../../dist/styles.css"
+import "../../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import sample
 import { Container, Row, Col, Button } from "reactstrap";

@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import Home from "./src/components/home/home.jsx"
 import AboutMe from "./src/components/about-me/about-me.jsx"
 import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
+import ProjectsDisplay from "./src/components/projects-display/projects-display.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     {
       path: "/about-me",
       element: <AboutMe />
+    },
+    {
+      path: "/projects",
+      element: <ProjectsDisplay/>
     }
 ])
 
