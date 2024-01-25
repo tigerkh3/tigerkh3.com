@@ -12,7 +12,7 @@ function Home () {
   return (
     <Container key="home-parent" className="home-parent">
       <AboutMeHome key="about-me-home"/>
-      <ProjectsDisplay key="projects-display"/>
+      <ProjectsDisplay key="projects-display" compType={"home"}/>
     </Container>
   )
 }

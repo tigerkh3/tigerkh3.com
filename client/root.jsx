@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/projects",
-      element: <ProjectsDisplay/>
+      element: <ProjectsDisplay compType={"main"}/>
     }
 ])
 

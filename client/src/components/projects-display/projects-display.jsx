@@ -9,13 +9,13 @@ import sampleCard from "./pd-components/sample/pd-card-sample.js";
 import ProjectCard from './pd-components/project-card.jsx';
 
 // projects-display component
-function ProjectsDisplay () {
+function ProjectsDisplay (props) {
   return ([
-    <Container key="projects-display-home" className="projects-display-home-parent">
-      <Row key="projects-display-home-row" className="projects-cards-display-home">
+    <Container key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
+      <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
         {sampleCard.map( (currentProj, index) => {
           return(
-            <ProjectCard key={`project-card-${index}`} index={`${index}`} project={currentProj}></ProjectCard>
+            <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} compType={props.compType} project={currentProj}></ProjectCard>
           )
         })}
       </Row>

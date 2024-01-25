@@ -59,15 +59,19 @@
   margin: 2.5% 0% 0%;
 }
 
-.card-home-title {
-  padding: 5%;
-  margin: 0;
-}
-
 .card-home-row {
   margin: 1%;
   margin: 0;
   border: solid gray 1px;
+}
+
+.card-title-home-row {
+  padding: 5%;
+  margin: 0;
+}
+
+.card-title-home {
+  margin: 0;
 }
 
 .card-home-description {
