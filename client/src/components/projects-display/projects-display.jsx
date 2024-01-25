@@ -10,8 +10,11 @@ import ProjectCard from './pd-components/project-card.jsx';
 
 // projects-display component
 function ProjectsDisplay (props) {
-  return ([
-    <Container key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
+  return (
+    <Container fluid="sm" key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
+      <div key={"projects-display-heading" + props.compType + "-row"} className={`projects-display-heading-${props.compType}-row`}>
+        <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> My Projects </h1>
+      </div>
       <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
         {sampleCard.map( (currentProj, index) => {
           return(
@@ -20,7 +23,7 @@ function ProjectsDisplay (props) {
         })}
       </Row>
     </Container>
-  ])
+  )
 }
 
 export default ProjectsDisplay;

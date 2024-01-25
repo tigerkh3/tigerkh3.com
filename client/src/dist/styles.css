@@ -1,10 +1,14 @@
 /* Application CSS file */
 
+/* --------------------------------------------*/
+
 /* Home Page CSS */
 .home-parent {
   border: solid orange 1px;
   padding: 0;
 }
+
+/* --------------------------------------------*/
 
 /* Navigation Bar CSS */
 
@@ -24,6 +28,8 @@
   color: lightgray;
 }
 
+/* --------------------------------------------*/
+
 /* About Me Home CSS */
 
 .about-me-home-parent {
@@ -39,30 +45,31 @@
   overflow: auto;
 }
 
+/* --------------------------------------------*/
+
 /* Projects Display Home CSS */
 
 .projects-display-home-parent {
   border: solid red 1px;
   text-align: center;
   max-height: 99%;
+  padding: 2.5%;
 }
 
-/* Projects Card CSS */
+/* Projects Card Home CSS */
 
 .projects-cards-display-home {
   border: solid blue 1px;
-  padding: 0% 2.5% 2.5%;
+  padding: 2.5%;
 }
 
 .card-home {
-  border: none;
-  margin: 2.5% 0% 0%;
+  border: solid gray 1px;
 }
 
 .card-home-row {
   margin: 1%;
   margin: 0;
-  border: solid gray 1px;
 }
 
 .card-title-home-row {
@@ -86,8 +93,9 @@
   margin: 5%;
 }
 
+/* --------------------------------------------*/
 
-/* About Me CSS */
+/* About Me  Main CSS */
 
 .header {
   padding-left: 5%;
@@ -125,4 +133,56 @@
 
 .about-me-qualifications {
   padding-left: 5%;
+}
+
+/* --------------------------------------------*/
+
+/* Projects Display Main CSS */
+.projects-display-main-parent {
+  border: solid blue 1px;
+  margin-top: 5%;
+}
+
+.projects-cards-display-main {
+  border: solid red 1px;
+  padding: 0% 12.5%;
+}
+
+.projects-display-heading-main-row {
+  padding: 0% 12.5%;
+}
+
+.projects-display-heading-main {
+  margin: 0;
+  text-align: center;
+}
+
+.card-col-main {
+  padding: 5%;
+}
+
+.card-main {
+  border: solid black 1px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.card-main-row {
+  margin: 1%;
+  margin: 0;
+}
+
+.card-title-main-row {
+  padding: 5%;
+  margin: 0;
+}
+
+.card-title-main {
+  margin: 0;
+}
+
+.card-main-description {
+  text-align: center;
+  padding: 7.5%;
+  margin: 0;
 }
