@@ -11,7 +11,7 @@ import ProjectsDisplay from "../projects-display/projects-display.jsx";
 function Home () {
   return (
     <Container key="home-parent" className="home-parent">
-      <AboutMeHome key="about-me-home"/>,
+      <AboutMeHome key="about-me-home"/>
       <ProjectsDisplay key="projects-display"/>
     </Container>
   )
