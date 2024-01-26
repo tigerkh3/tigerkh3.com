@@ -1,25 +1,29 @@
 // sample file containing project card database return object
 
-const sampleCard = [
+const sampleCards = [
   {
+  id: 1,
   projName: "KingMaker.io1",
   projWLink: "kingmaker.io",
   projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
   projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
   },
   {
+    id: 2,
     projName: "KingMaker.io2",
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
   },
   {
+    id: 3,
     projName: "KingMaker.io3",
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
   },
   {
+    id: 4,
     projName: "KingMaker.io4",
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
@@ -27,4 +31,4 @@ const sampleCard = [
   }
 ]
 
-export default sampleCard;
+export default sampleCards;
