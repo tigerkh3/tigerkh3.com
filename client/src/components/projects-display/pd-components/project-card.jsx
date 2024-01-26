@@ -8,7 +8,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 // project-display child component is project-card
 function ProjectCard (props) {
   return ([
-    <Col xs="12" sm="6" key={`project-card-${props.compType}-col-${props.index}`} className={`card-col-${props.compType} card-col-${props.compType}-${props.index}`} >
+    <Col xs="12" sm="6" md={props.med} lg={props.large} key={`project-card-${props.compType}-col-${props.index}`} className={`card-col-${props.compType} card-col-${props.compType}-${props.index}`} >
       <div key={`project-card-${props.compType}-${props.index}`} className={`card-${props.compType} card-${props.compType}-${props.index}`}>
         <Row key={`project-card-${props.compType}-title-row-${props.index}`} className={`card-title-${props.compType}-row card-${props.compType}-row`}>
           <h6 key={`project-card-${props.compType}-title-${props.index}`} className={`card-title-${props.compType}`}> {props.project.projName} </h6>

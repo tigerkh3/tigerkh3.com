@@ -58,9 +58,18 @@
 
 /* Projects Card Home CSS */
 
+.projects-cards-display-home-parent {
+}
+
 .projects-cards-display-home {
   border: solid blue 1px;
-  padding: 2.5%;
+  padding: 0 2.5% 2.5%;
+}
+
+.projects-display-heading-home {
+  margin: 0;
+  text-align: center;
+  padding: 2.5% 0%;
 }
 
 .card-home {
@@ -155,6 +164,7 @@
 .projects-display-heading-main {
   margin: 0;
   text-align: center;
+  padding: 2.5% 0%;
 }
 
 .card-col-main {
@@ -164,7 +174,8 @@
 .card-main {
   border: solid black 1px;
   text-align: center;
-  max-width: 80%;
+  max-width: 85%;
+  margin-left: 7.5%;
 }
 
 .card-main-row {
@@ -179,6 +190,7 @@
 
 .card-title-main {
   margin: 0;
+
 }
 
 .card-main-description {

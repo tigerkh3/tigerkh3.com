@@ -18,7 +18,7 @@ function ProjectsDisplay (props) {
       <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
         {sampleCard.map( (currentProj, index) => {
           return(
-            <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} compType={props.compType} project={currentProj}></ProjectCard>
+            <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} med={props.med} large={props.large} compType={props.compType} project={currentProj}></ProjectCard>
           )
         })}
       </Row>
