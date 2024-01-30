@@ -97,9 +97,9 @@
 
 }
 
-.card-link-home-wl, .card-link-home-gh {
-  border: solid pink 1px;
-  margin: 5%;
+.card-link-home-col-wl, .card-link-home-col-gh, .card-link-home-col-details {
+  padding: 0;
+  text-align: center;
 }
 
 /* --------------------------------------------*/
@@ -197,4 +197,19 @@
   text-align: center;
   padding: 7.5%;
   margin: 0;
+}
+
+.card-link-main-col-wl, .card-link-main-col-gh, .card-link-main-col-details {
+  padding: 0;
+  text-align: center;
+}
+
+/* Project Details Main CSS */
+
+.project-details-main-parent h1 {
+  padding-top: 2%;
+}
+
+.project-details-main-parent p {
+  padding-top: 1%;
 }

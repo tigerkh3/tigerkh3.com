@@ -12,17 +12,17 @@ import ProjectCard from './pd-components/project-card.jsx';
 function ProjectsDisplay (props) {
   return (
     <Container fluid="sm" key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
-      <div key={"projects-display-heading" + props.compType + "-row"} className={`projects-display-heading-${props.compType}-row`}>
-        <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> My Projects </h1>
-      </div>
-      <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
-        {sampleCards.map( (currentProj, index) => {
-          return(
-            <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} med={props.med} large={props.large} compType={props.compType} project={currentProj}></ProjectCard>
-          )
-        })}
-      </Row>
-    </Container>
+    <div key={"projects-display-heading" + props.compType + "-row"} className={`projects-display-heading-${props.compType}-row`}>
+      <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> My Projects </h1>
+    </div>
+    <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
+      {sampleCards.map( (currentProj, index) => {
+        return(
+          <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} med={props.med} large={props.large} compType={props.compType} project={currentProj}></ProjectCard>
+        )
+      })}
+    </Row>
+  </Container>
   )
 }
 
