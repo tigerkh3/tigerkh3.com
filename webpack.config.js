@@ -48,6 +48,17 @@ module.exports = {
           loader: "file-loader"
           }
         ]
+      },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader",
+          },
+          {
+            loader: "remark-loader",
+          },
+        ],
       }
     ]
   },
