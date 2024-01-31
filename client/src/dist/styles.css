@@ -4,29 +4,30 @@
 
 /* Home Page CSS */
 .home-parent {
-  border: solid orange 1px;
-  padding: 0;
+  border: solid orange 1px
 }
 
 /* --------------------------------------------*/
 
 /* Navigation Bar CSS */
 
-.nav-link {
-  padding-top: 8;
-  padding-left: 8;
-  padding-bottom: 8;
-  padding-left: 0;
+.nav-bar-parent {
+  padding: 0;
 }
 
-.nav-bar-brand {
-  color: lightgray;
-  min-width: 100%;
+.nav {
+  width: 100%;
+}
+
+
+.nav-link {
+  text-align: center;
 }
 
 .tabs {
   color: lightgray;
 }
+
 
 /* --------------------------------------------*/
 
@@ -34,7 +35,7 @@
 
 .about-me-home-parent {
   width: fit-content;
-  padding: 5% 15%;
+  padding: 15% 0%;
 }
 
 .about-me-home-description {

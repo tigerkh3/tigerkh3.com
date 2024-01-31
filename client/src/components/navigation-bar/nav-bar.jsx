@@ -3,27 +3,26 @@ import React from "react";
 import "../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import components
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 // Nav Bar Items
 import navItems from "./sample/nav-items.js";
 
 // Navigation Bar Component
 function NavBar () {
   return ([
-    <Navbar key="nav-bar" className="nav-bar" color="dark">
-      <NavbarBrand key="nav-bar-brand" className="nav-bar-brand" href="/">
-        tigerkh3.io
-      </NavbarBrand>
-      <Nav key="nav" className="nav">
+    <Container key="nav-bar-parent" className="nav-bar-parent">
+      <Navbar key="nav-bar" className="nav-bar" color="dark">
+        <Nav fill key="nav" className="nav">
         {navItems.map( (currentLink, index) => {
-          return(
-            <NavItem key={`nav-item-${index}`}>
-              <NavLink href={currentLink.href} key={`nav-tab-${index}`} className="tabs"> {currentLink.name} </NavLink>
-            </NavItem>
-          )
-        })}
-      </Nav>
-    </Navbar>
+            return(
+              <NavItem key={`nav-item-${index}`}>
+                <NavLink href={currentLink.href} key={`nav-tab-${index}`} className="tabs"> {currentLink.name} </NavLink>
+              </NavItem>
+            )
+          })}
+        </Nav>
+      </Navbar>
+    </Container>
   ])
 }
 
