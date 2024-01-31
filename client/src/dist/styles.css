@@ -3,8 +3,10 @@
 /* --------------------------------------------*/
 
 /* Home Page CSS */
+
 .home-parent {
-  border: solid orange 1px
+  border: solid orange 1px;
+  padding: 0 15%;
 }
 
 /* --------------------------------------------*/
@@ -12,7 +14,7 @@
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
-  padding: 0;
+  padding: 0 15%;
 }
 
 .nav {
@@ -35,15 +37,21 @@
 
 .about-me-home-parent {
   width: fit-content;
-  padding: 15% 0%;
+}
+
+.about-me-home-row {
+  text-align: center;
 }
 
 .about-me-home-description {
-  position: relative;
-  font-weight: 600;
+  padding: 5% 1%;
   background: black;
   color: lightgray;
   overflow: auto;
+}
+
+.about-me-home-description h4 {
+  margin-bottom: 2%;
 }
 
 /* --------------------------------------------*/
