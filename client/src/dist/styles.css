@@ -5,7 +5,7 @@
 /* Home Page CSS */
 
 .home-parent {
-  padding: 0 15%;
+  min-width: 100%;
 }
 
 /* --------------------------------------------*/
@@ -13,7 +13,8 @@
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
-  padding: 0 15%;
+  max-width: 720px;
+  padding: 0;
 }
 
 .nav {
@@ -35,68 +36,70 @@
 /* About Me Home CSS */
 
 .about-me-home-parent {
-  width: fit-content;
+  max-width: 720px;
 }
 
-.about-me-home-row {
-  text-align: center;
+.about-me-home-description-row {
+  margin-top: 12px;
+}
+
+.about-me-home-description-heading {
+  overflow: auto;
+  margin-top: 32px;
 }
 
 .about-me-home-description {
-  padding: 5% 2.5%;
   overflow: auto;
-}
-
-.about-me-home-description h4 {
-  margin-bottom: 2%;
+  margin-top: 16px;
 }
 
 /* --------------------------------------------*/
 
 /* Projects Display & Cards Home CSS */
 
-.projects-display-home-parent {
-  border: solid 1px black;
-  border-radius: 5px;
+.projects-display-parent {
+  margin-top: 36px;
+  max-width: 720px;
 }
 
-.projects-cards-display-home {
-  padding: 2.5% 2.5%;
+.projects-cards-display {
+  padding: 0% 0% 2.5%;
 }
 
-.projects-display-heading-home {
+.projects-display-heading {
   margin: 0;
-  text-align: center;
-  padding: 2.5% 0% 0%;
+  margin-bottom: 5%;
 }
 
-.card-home {
+.card {
   border: solid gray 1px;
   border-radius: 5px;
   margin: 5% 0%;
 }
 
-.card-home-row {
+.card-row {
   margin: 1%;
   margin: 0;
+  padding: 0% 2.5%;
 }
 
-.card-title-home-row {
+.card-title-row {
   padding: 7.5% 7.5% 0%;
 }
 
-.card-title-home {
+.card-title {
   margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.card-home-description {
+.card-description {
   text-align: center;
   padding: 7.5%;
   margin: 0;
 }
 
-.card-link-home-col {
+.card-link-col {
   padding: 2.5%;
 }
 
@@ -149,71 +152,3 @@
 }
 
 /* --------------------------------------------*/
-
-/* Projects Display Main CSS */
-.projects-display-main-parent {
-  border: solid blue 1px;
-  margin-top: 5%;
-}
-
-.projects-cards-display-main {
-  border: solid red 1px;
-  padding: 0% 12.5%;
-}
-
-.projects-display-heading-main-row {
-  padding: 0% 12.5%;
-}
-
-.projects-display-heading-main {
-  margin: 0;
-  text-align: center;
-  padding: 2.5% 0%;
-}
-
-.card-col-main {
-  padding: 5%;
-}
-
-.card-main {
-  border: solid black 1px;
-  text-align: center;
-  max-width: 85%;
-  margin-left: 7.5%;
-}
-
-.card-main-row {
-  margin: 1%;
-  margin: 0;
-}
-
-.card-title-main-row {
-  padding: 5%;
-  margin: 0;
-}
-
-.card-title-main {
-  margin: 0;
-
-}
-
-.card-main-description {
-  text-align: center;
-  padding: 7.5%;
-  margin: 0;
-}
-
-.card-link-main-col-wl, .card-link-main-col-gh, .card-link-main-col-details {
-  padding: 0;
-  text-align: center;
-}
-
-/* Project Details Main CSS */
-
-.project-details-main-parent h1 {
-  padding-top: 2%;
-}
-
-.project-details-main-parent p {
-  padding-top: 1%;
-}

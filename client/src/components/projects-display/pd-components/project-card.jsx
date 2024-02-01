@@ -10,23 +10,23 @@ import { Container, Row, Col, Button } from "reactstrap";
 function ProjectCard (props) {
 
   return ([
-    <Col xs="12" sm="6" md={props.med} lg={props.large} key={`project-card-${props.compType}-col-${props.index}`} className={`card-col-${props.compType} card-col-${props.compType}-${props.index}`} >
-      <div key={`project-card-${props.compType}-${props.index}`} className={`card-${props.compType} card-${props.compType}-${props.index}`}>
-        <Row key={`project-card-${props.compType}-title-row-${props.index}`} className={`card-title-${props.compType}-row card-${props.compType}-row`}>
-          <h6 key={`project-card-${props.compType}-title-${props.index}`} className={`card-title-${props.compType}`}> {props.project.projName} </h6>
+    <Col sm="6" key={`project-card-col-${props.index}`} className={`card-col card-col-${props.index}`} >
+      <div key={`project-card-${props.index}`} className={`card card-${props.index}`}>
+        <Row key={`project-card-title-row-${props.index}`} className={`card-title-row card-row`}>
+          <h6 key={`project-card-title-${props.index}`} className={`card-title`}> {props.project.projName} </h6>
         </Row>
-        <Row key={`project-card-${props.compType}-description-row-${props.index}`} className={`card-description-${props.compType}-row card-${props.compType}-row`}>
-          <p className={`card-${props.compType}-description`}> {props.project.projDescription} </p>
+        <Row key={`project-card-description-row-${props.index}`} className={`card-description-row card-row`}>
+          <p className={`card-description`}> {props.project.projDescription} </p>
         </Row>
-        <Row key={`project-card-links-${props.compType}-row-${props.index}`} className={`card-links-${props.compType}-row card-${props.compType}-row`}>
-          <Col key={`card-details-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
-            <p className={`card-link-${props.compType}-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
+        <Row key={`project-card-links-row-${props.index}`} className={`card-links-row card-row`}>
+          <Col key={`card-details-link-col-${props.index}`} className={`card-link-col`}>
+            <p className={`card-link-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
           </Col>
-          <Col key={`card-web-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
-            <p className={`card-link-${props.compType}-wl link`} onClick={ ()=> {window.open(props.project.projWLink)}}> Demo </p>
+          <Col key={`card-web-link-col-${props.index}`} className={`card-link-col`}>
+            <p className={`card-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink)}}> Demo </p>
           </Col>
-          <Col key={`card-github-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
-            <p className={`card-link-${props.compType}-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> GitHub </p>
+          <Col key={`card-github-link-col-${props.index}`} className={`card-link-col`}>
+            <p className={`card-link-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> Source </p>
           </Col>
         </Row>
       </div>
