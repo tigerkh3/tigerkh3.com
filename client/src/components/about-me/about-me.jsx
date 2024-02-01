@@ -33,9 +33,15 @@ function AboutMe () {
           </div>
         </div>
       </Container>
-      <Container key="about-me-stack" className="about-me-stack">
-        <h2 className="header"> Tech Stack </h2>
-        <div key="about-me-stack-parent" className="about-me-stack-parent">
+      <Container key="about-me-qualifications" className="about-me-qualifications-parent">
+        <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
+        <div className="about-me-qualifications">
+          <a key="about-me-resume" className="about-me-resume" onClick={ () => { window.open('../../../resume/Tiger_Hong_Resume.pdf')}}> Resume </a>
+        </div>
+      </Container>
+      <Container key="about-me-stack" className="about-me-stack-parent">
+        <h2 className="header"> My Tech Stack </h2>
+        <div key="about-me-stack-parent" className="about-me-stack">
           <img key="JS-img" className="about-me-stack-img" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
           <img key="React-img" className="about-me-stack-img" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
           <img key="Node-img" className="about-me-stack-img" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
@@ -44,12 +50,6 @@ function AboutMe () {
           <img key="SQL-img" className="about-me-stack-img" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
           <img key="GH-img" className="about-me-stack-img gh-img" alt="GitHub" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" />
           <img key="Term-img" className="about-me-stack-img" alt="Terminal" src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3205154/terminal-icon-md.png" />
-        </div>
-      </Container>
-      <Container key="about-me-qualifications" className="about-me-qualifications-parent">
-        <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
-        <div className="about-me-qualifications">
-          <a key="about-me-resume" className="about-me-resume"> Resume </a>
         </div>
       </Container>
     </Container>

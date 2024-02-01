@@ -45,12 +45,12 @@
 
 .about-me-home-description-heading {
   overflow: auto;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .about-me-home-description {
   overflow: auto;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 /* --------------------------------------------*/
@@ -66,10 +66,6 @@
   padding: 0% 0% 2.5%;
 }
 
-.projects-display-heading {
-  margin: 0;
-  margin-bottom: 5%;
-}
 
 .card {
   border: solid gray 1px;
@@ -113,42 +109,41 @@
 
 /* About Me  Main CSS */
 
-.header {
-  padding-left: 5%;
+.about-me-parent {
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
-.about-me-parent {
-  width: fit-content;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 0% 10%;
-}
 
 .about-me-intro {
-  padding: 2.5% 5%;
-}
-
-.li {
-  margin-bottom: 2.5%;
-  width: fit-content;
+  margin-top: 12px;
 }
 
 .about-me-stack-parent {
-  padding: 2.5% 0%;
+  margin-top: 24px;
+}
+
+.about-me-stack {
+  margin-top: 12px;
 }
 
 .about-me-stack-img {
-  max-width: 5%;
-  max-height: 5%;
-  margin-left: 5%;
+  margin-top: 12px;
+  max-width: 36px;
+  max-height: 36px;
+  margin-right: 12px;
 }
 
 .gh-img {
   background-color: black;
 }
 
+.about-me-qualifications-parent {
+  margin-top: 24px;
+}
+
 .about-me-qualifications {
-  padding-left: 5%;
+  margin-top: 12px;
 }
 
 /* --------------------------------------------*/
