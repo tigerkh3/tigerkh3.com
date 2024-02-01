@@ -19,13 +19,13 @@ function ProjectCard (props) {
           <p className={`card-${props.compType}-description`}> {props.project.projDescription} </p>
         </Row>
         <Row key={`project-card-links-${props.compType}-row-${props.index}`} className={`card-links-${props.compType}-row card-${props.compType}-row`}>
-          <Col xs="4" sm="6" md="6" lg="4" key={`card-details-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col-details`}>
+          <Col key={`card-details-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
             <p className={`card-link-${props.compType}-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
           </Col>
-          <Col xs="4" sm="6" md="6" lg="4" key={`card-web-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col-wl`}>
+          <Col key={`card-web-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
             <p className={`card-link-${props.compType}-wl link`} onClick={ ()=> {window.open(props.project.projWLink)}}> Demo </p>
           </Col>
-          <Col xs="4" sm="6" md="6" lg="4" key={`card-github-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col-gh`}>
+          <Col key={`card-github-link-${props.compType}-col-${props.index}`} className={`card-link-${props.compType}-col`}>
             <p className={`card-link-${props.compType}-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> GitHub </p>
           </Col>
         </Row>

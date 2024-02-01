@@ -11,9 +11,9 @@ import ProjectCard from './pd-components/project-card.jsx';
 // projects-display component
 function ProjectsDisplay (props) {
   return (
-    <Container fluid="sm" key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
+    <Container key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
     <div key={"projects-display-heading" + props.compType + "-row"} className={`projects-display-heading-${props.compType}-row`}>
-      <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> My Projects </h1>
+      <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> Past Projects </h1>
     </div>
     <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
       {sampleCards.map( (currentProj, index) => {

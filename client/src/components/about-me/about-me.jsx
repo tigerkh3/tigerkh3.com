@@ -24,10 +24,10 @@ function AboutMe () {
           <div key="about-me-socials-parent" className="about-me-socials-parent">
             <p key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </p>
             <div key="about-me-socials-links" className="about-me-socials-links">
-              <a href="https://linkedin.com/in/tigerkh3" target="blank" key="about-me-LinkedIn" className="about-me-LinkedIn link" > LinkedIn</a>
+              <a href="https://linkedin.com/in/tigerkh3" target="blank" key="about-me-LinkedIn" className="about-me-LinkedIn" > LinkedIn</a>
               <br></br>
               <br></br>
-              <a href="https://github.com/tigerkh3" target="blank" key="about-me-GitHub" className="about-me-GitHub link"> GitHub </a>
+              <a href="https://github.com/tigerkh3" target="blank" key="about-me-GitHub" className="about-me-GitHub"> GitHub </a>
               <br></br>
             </div>
           </div>
@@ -49,7 +49,7 @@ function AboutMe () {
       <Container key="about-me-qualifications" className="about-me-qualifications-parent">
         <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
         <div className="about-me-qualifications">
-          <a key="about-me-resume" className="about-me-resume link"> Resume </a>
+          <a key="about-me-resume" className="about-me-resume"> Resume </a>
         </div>
       </Container>
     </Container>

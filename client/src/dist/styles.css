@@ -5,7 +5,6 @@
 /* Home Page CSS */
 
 .home-parent {
-  border: solid orange 1px;
   padding: 0 15%;
 }
 
@@ -44,9 +43,7 @@
 }
 
 .about-me-home-description {
-  padding: 5% 1%;
-  background: black;
-  color: lightgray;
+  padding: 5% 2.5%;
   overflow: auto;
 }
 
@@ -56,33 +53,27 @@
 
 /* --------------------------------------------*/
 
-/* Projects Display Home CSS */
+/* Projects Display & Cards Home CSS */
 
 .projects-display-home-parent {
-  border: solid red 1px;
-  text-align: center;
-  max-height: 99%;
-  padding: 2.5%;
-}
-
-/* Projects Card Home CSS */
-
-.projects-cards-display-home-parent {
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 .projects-cards-display-home {
-  border: solid blue 1px;
-  padding: 0 2.5% 2.5%;
+  padding: 2.5% 2.5%;
 }
 
 .projects-display-heading-home {
   margin: 0;
   text-align: center;
-  padding: 2.5% 0%;
+  padding: 2.5% 0% 0%;
 }
 
 .card-home {
   border: solid gray 1px;
+  border-radius: 5px;
+  margin: 5% 0%;
 }
 
 .card-home-row {
@@ -91,23 +82,27 @@
 }
 
 .card-title-home-row {
-  padding: 5%;
-  margin: 0;
+  padding: 7.5% 7.5% 0%;
 }
 
 .card-title-home {
   margin: 0;
+  text-align: center;
 }
 
 .card-home-description {
   text-align: center;
   padding: 7.5%;
   margin: 0;
-
 }
 
-.card-link-home-col-wl, .card-link-home-col-gh, .card-link-home-col-details {
-  padding: 0;
+.card-link-home-col {
+  padding: 2.5%;
+}
+
+.link {
+  border: solid black 1px;
+  border-radius: 5px;
   text-align: center;
 }
 
