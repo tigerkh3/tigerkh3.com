@@ -9,7 +9,7 @@ I highly recommend that anyone reading this README for the first time check out 
 
 # Table of Contents
 
-[Application Features](#application-features)
+[Application Features](#Application-Features)
 
 [HTTP Request / Response Cycle for KingMaker.io](#http-request-response-cycle-for-kingmakerio)
 

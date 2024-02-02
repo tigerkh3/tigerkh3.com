@@ -13,7 +13,7 @@ function ProjectsDisplay (props) {
   return (
     <Container key={"projects-display-parent"} className={"projects-display-parent"}>
     <div key={"projects-display-heading-row"} className={`projects-display-heading-row`}>
-      <h2 key={"projects-display-heading"} className={`projects-display-heading`}> Past Projects </h2>
+      <h1 key={"projects-display-heading"} className={`projects-display-heading`}> Past Projects </h1>
     </div>
     <Row key={"projects-display-row"} className={`projects-cards-display`}>
       {sampleCards.map( (currentProj, index) => {

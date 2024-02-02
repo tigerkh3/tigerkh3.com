@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../dist/styles.css";
 // import sample
 import sampleAM from "./sample/about-me-sample.js"
+import linkedin from "./icons/linkedin.png"
+import resumeicon from "./icons/resume.png"
 // import our pdf
 import Resume from "../../../resume/Tiger_Hong_Resume.pdf"
 // App Child Components
@@ -26,10 +28,8 @@ function AboutMe () {
           <div key="about-me-socials-parent" className="about-me-socials-parent">
             <p key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </p>
             <div key="about-me-socials-links" className="about-me-socials-links">
-              <a href="https://linkedin.com/in/tigerkh3" target="blank" key="about-me-LinkedIn" className="about-me-LinkedIn" > LinkedIn</a>
-              <br></br>
-              <br></br>
-              <a href="https://github.com/tigerkh3" target="blank" key="about-me-GitHub" className="about-me-GitHub"> GitHub </a>
+              <img key="LI-img" className="about-me-socials-img li-img" src={linkedin} onClick={ () => {window.open("https://linkedin.com/in/tigerkh3")}}></img>
+              <img key="GH-img" className="about-me-socials-img gh-img" alt="GitHub" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" onClick={ () => {window.open("https://github.com/tigerkh3")}}/>
               <br></br>
             </div>
           </div>
@@ -38,7 +38,7 @@ function AboutMe () {
       <Container key="about-me-qualifications" className="about-me-qualifications-parent">
         <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
         <div className="about-me-qualifications">
-          <a key="about-me-resume" className="about-me-resume" onClick={ () => { window.open(Resume)}}> Resume </a>
+          <img key="about-me-resume" className="about-me-resume-img" src={resumeicon} onClick={ () => { window.open(Resume)}}></img>
         </div>
       </Container>
       <Container key="about-me-stack" className="about-me-stack-parent">

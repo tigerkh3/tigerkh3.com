@@ -12,10 +12,10 @@ function AboutMeHome () {
   return ([
     <Container key="about-me-home" className="about-me-home-parent">
       <Row key="about-me-home-row" className="about-me-home-description-row">
-      <h2 key="about-me-home-div-heading" className="about-me-home-description-heading"> Hello there! I'm Tiger (and yes that's my real name), </h2>
+      <h1 key="about-me-home-div-heading" className="about-me-home-description-heading"> Hi there! </h1>
         {sampleAM.homePage.split('\n').map((currentParagraph, index) => {
           return (
-            <div key="about-me-home-div" className="about-me-home-description">
+            <div key={`about-me-home-div-${index}`} className="about-me-home-description">
               <h5 key="about-me-home-div-intro" className="about-me-home-description"> {currentParagraph}</h5>
             </div>
           )

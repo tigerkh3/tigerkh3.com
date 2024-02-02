@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <ProjectsDisplay compType={"main"}/>
   },
   {
-    path: "project-details/:id",
+    path: "project-details",
     element: <ProjectDetails/>,
   }
 ])

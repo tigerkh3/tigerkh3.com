@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import css styles
 import "../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,15 +9,18 @@ import navItems from "./sample/nav-items.js";
 
 // Navigation Bar Component
 function NavBar () {
+
+  const [active, setActive] = useState('active')
+
   return ([
     <Container key="nav-bar-parent" className="nav-bar-parent">
       <Navbar key="nav-bar" className="nav-bar">
-        <NavbarBrand href="/"> Filler Til Image </NavbarBrand>
+        <NavbarBrand className="link" href="/"> Filler Til Image </NavbarBrand>
         <Nav key="nav" className="nav">
         {navItems.map( (currentLink, index) => {
             return(
               <NavItem key={`nav-item-${index}`}>
-                <NavLink href={currentLink.href} key={`nav-tab-${index}`} className="tabs"> {currentLink.name} </NavLink>
+                <NavLink className="link" href={currentLink.href} key={`nav-link-${index}`}> {currentLink.name} </NavLink>
               </NavItem>
             )
           })}
