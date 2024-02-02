@@ -4,8 +4,14 @@
 
 /* Home Page CSS */
 
+#root {
+  background: linear-gradient(.375turn, #DF9065, #DF8B46, #BE5F1B, #883A19, #070604);
+  color: #1e1e1e;
+}
+
 .home-parent {
   min-width: 100%;
+  min-height: 100vh;
 }
 
 /* --------------------------------------------*/
@@ -13,12 +19,16 @@
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
-  max-width: 720px;
+  min-width: 100%;
   padding: 0;
 }
 
+.navbar {
+  background-color: #933a19;
+}
+
 .nav {
-  width: 100%;
+  max-width: 720px;
 }
 
 
@@ -27,7 +37,7 @@
 }
 
 .tabs {
-  color: lightgray;
+  color: #1e1e1e;
 }
 
 
@@ -68,7 +78,6 @@
 
 
 .card {
-  border: solid gray 1px;
   border-radius: 5px;
   margin: 5% 0%;
 }
@@ -109,9 +118,13 @@
 
 /* About Me  Main CSS */
 
+
 .about-me-parent {
   margin-top: 36px;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+  max-width: 720px;
+  color: #1e1e1e;
+  min-height: 100vh;
 }
 
 
@@ -121,6 +134,10 @@
 
 .about-me-stack-parent {
   margin-top: 24px;
+}
+
+a {
+  color: #1e1e1e;
 }
 
 .about-me-stack {
