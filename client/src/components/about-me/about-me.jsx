@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../dist/styles.css";
 // import sample
 import sampleAM from "./sample/about-me-sample.js"
+// import our pdf
+import Resume from "../../../resume/Tiger_Hong_Resume.pdf"
 // App Child Components
 
 
@@ -36,7 +38,7 @@ function AboutMe () {
       <Container key="about-me-qualifications" className="about-me-qualifications-parent">
         <h2 key="about-me-qualifications-header" className="header"> My Qualifications</h2>
         <div className="about-me-qualifications">
-          <a key="about-me-resume" className="about-me-resume" onClick={ () => { window.open('../../../resume/Tiger_Hong_Resume.pdf')}}> Resume </a>
+          <a key="about-me-resume" className="about-me-resume" onClick={ () => { window.open(Resume)}}> Resume </a>
         </div>
       </Container>
       <Container key="about-me-stack" className="about-me-stack-parent">
