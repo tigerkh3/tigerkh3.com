@@ -5,12 +5,15 @@ module.exports = {
   entry: path.resolve(__dirname, "client", "root.jsx"),
   output: {
     path: path.resolve(__dirname, "client", "src", "dist"),
+    publicPath: "/",
     filename: "bundle.js",
   },
   devServer: {
-    static: {
+    static: [
+    {
       directory: path.resolve(__dirname, "client", "src", "dist"),
-    },
+    }
+    ],
     hot: true,
     port: 3000,
     historyApiFallback: true,

@@ -20,7 +20,7 @@ function ProjectCard (props) {
         </Row>
         <Row key={`project-card-links-row-${props.index}`} className={`card-links-row card-row`}>
           <Col key={`card-details-link-col-${props.index}`} className={`card-link-col`}>
-            <p className={`card-link-details link`} onClick={ ()=> {location.href=`/project-details`}}> Details </p>
+            <p className={`card-link-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
           </Col>
           <Col key={`card-web-link-col-${props.index}`} className={`card-link-col`}>
             <p className={`card-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink)}}> Demo </p>
