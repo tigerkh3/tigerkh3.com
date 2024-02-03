@@ -6,7 +6,7 @@ h1, h2 {
   color: #14A76C
 }
 
-.link:hover {
+.link:hover, a:hover {
   color: #14A76C
 }
 
@@ -160,5 +160,10 @@ h1, h2 {
 .project-details-main p {
   padding-top: 12px;
 }
+
+p a {
+  color: white;
+}
+
 
 /* --------------------------------------------*/
