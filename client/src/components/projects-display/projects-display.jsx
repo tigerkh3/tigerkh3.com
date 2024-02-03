@@ -11,14 +11,14 @@ import ProjectCard from './pd-components/project-card.jsx';
 // projects-display component
 function ProjectsDisplay (props) {
   return (
-    <Container fluid="sm" key={"projects-display-" + props.compType} className={"projects-display-" + props.compType + "-parent"}>
-    <div key={"projects-display-heading" + props.compType + "-row"} className={`projects-display-heading-${props.compType}-row`}>
-      <h1 key={"projects-display-heading" + props.compType} className={`projects-display-heading-${props.compType}`}> My Projects </h1>
+    <Container key={"projects-display-parent"} className={"projects-display-parent"}>
+    <div key={"projects-display-heading-row"} className={`projects-display-heading-row`}>
+      <h1 key={"projects-display-heading"} className={`projects-display-heading`}> Past Projects </h1>
     </div>
-    <Row key={"projects-display-" + props.compType + "-row"} className={`projects-cards-display-${props.compType}`}>
+    <Row key={"projects-display-row"} className={`projects-cards-display`}>
       {sampleCards.map( (currentProj, index) => {
         return(
-          <ProjectCard key={`project-card-${props.compType}-${index}`} index={`${index}`} med={props.med} large={props.large} compType={props.compType} project={currentProj}></ProjectCard>
+          <ProjectCard key={`project-card-${index}`} index={`${index}`} project={currentProj}></ProjectCard>
         )
       })}
     </Row>

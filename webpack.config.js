@@ -5,10 +5,15 @@ module.exports = {
   entry: path.resolve(__dirname, "client", "root.jsx"),
   output: {
     path: path.resolve(__dirname, "client", "src", "dist"),
-    filename: "bundle.js"
+    publicPath: "/",
+    filename: "bundle.js",
   },
   devServer: {
-    static: path.resolve(__dirname, "client", "src", "dist"),
+    static: [
+    {
+      directory: path.resolve(__dirname, "client", "src", "dist"),
+    }
+    ],
     hot: true,
     port: 3000,
     historyApiFallback: true,
@@ -42,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(pdf|png|jpe?g|gif)$/i,
         use: [
           {
           loader: "file-loader"

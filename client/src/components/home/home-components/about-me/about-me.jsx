@@ -11,8 +11,15 @@ import sampleAM from "../../../about-me/sample/about-me-sample.js"
 function AboutMeHome () {
   return ([
     <Container key="about-me-home" className="about-me-home-parent">
-      <Row key="about-me-home-row" className="about-me-home-description">
-        {sampleAM.homePage}
+      <Row key="about-me-home-row" className="about-me-home-description-row">
+      <h1 key="about-me-home-div-heading" className="about-me-home-description-heading"> Hi there! </h1>
+        {sampleAM.homePage.split('\n').map((currentParagraph, index) => {
+          return (
+            <div key={`about-me-home-div-${index}`} className="about-me-home-description">
+              <h5 key="about-me-home-div-intro" className="about-me-home-description"> {currentParagraph}</h5>
+            </div>
+          )
+        })}
       </Row>
     </Container>
   ])
