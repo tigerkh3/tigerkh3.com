@@ -15,7 +15,7 @@ function NavBar () {
   return ([
     <Container key="nav-bar-parent" className="nav-bar-parent">
       <Navbar key="nav-bar" className="nav-bar">
-        <NavbarBrand className="link" href="/"> Filler Til Image </NavbarBrand>
+        <NavbarBrand className="link" href="/"> Tiger Hong </NavbarBrand>
         <Nav key="nav" className="nav">
         {navItems.map( (currentLink, index) => {
             return(

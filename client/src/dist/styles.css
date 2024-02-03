@@ -3,7 +3,8 @@
 /* --------------------------------------------*/
 
 h1, h2 {
-  color: #14A76C
+  color: #00FF7F;
+  font-weight: bold;
 }
 
 .link:hover, a:hover {
@@ -13,9 +14,10 @@ h1, h2 {
 /* Home Page CSS */
 
 #root {
-  background: #272727;
+  background: linear-gradient(.375turn, #111111, #474747, #111111) ;
   color: white;
   min-height: 100vh;
+  font-family: 'Montserrat';
 }
 
 .home-parent {
@@ -82,7 +84,7 @@ h1, h2 {
 .card {
   border-radius: 5px;
   margin: 5% 0%;
-  background: #767676;
+  background: #575757;
   color: white;
 }
 
