@@ -37,6 +37,7 @@
     "react-native-dotenv": "^3.4.9",
     "react-router-dom": "^6.21.3",
     "reactstrap": "^9.2.1",
+    "remark-gfm": "^4.0.0",
     "remark-loader": "^6.0.0",
     "style-loader": "^3.3.4",
     "webpack-dev-server": "^4.15.1"
