@@ -11,7 +11,10 @@ import logo from "./sample/logo.png"
 // Navigation Bar Component
 function NavBar () {
 
-  const [active, setActive] = useState('active')
+  const [home, setHomeState] = useState('active');
+  const [aboutMe, setAboutMeState] = useState('inactive');
+  const [projects, setProjectState] = useState('inactive');
+  const [journal, setJournalState] = useState('inactive');
 
   return ([
     <Container key="nav-bar-parent" className="nav-bar-parent">
@@ -23,7 +26,7 @@ function NavBar () {
         {navItems.map( (currentLink, index) => {
             return(
               <NavItem key={`nav-item-${index}`}>
-                <NavLink className="link" href={currentLink.href} key={`nav-link-${index}`}> {currentLink.name} </NavLink>
+                <NavLink active={window.location.pathname === currentLink.href} className="link" href={currentLink.href} key={`nav-link-${index}`}> {currentLink.name} </NavLink>
               </NavItem>
             )
           })}
