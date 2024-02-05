@@ -3,6 +3,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 // import App from "./src/components/app.jsx";
 import Home from "./src/components/home/home.jsx"
+import InProgress from "./src/components/in-progress/in-progress.jsx"
 import AboutMe from "./src/components/about-me/about-me.jsx"
 import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
 import ProjectDetails from "./src/components/projects-details/project-details.jsx"
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "project-details/:id",
     element: <ProjectDetails/>,
+  },
+  {
+    path: "/journal",
+    element: <InProgress />
   }
 ])
 

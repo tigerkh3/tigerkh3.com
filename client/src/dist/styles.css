@@ -26,6 +26,15 @@ h1, h2 {
 
 /* --------------------------------------------*/
 
+/* In Progress */
+
+.InProgress {
+  max-width: 720px;
+  padding-top: 60px;
+}
+
+/* --------------------------------------------*/
+
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
