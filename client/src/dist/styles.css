@@ -33,10 +33,14 @@ h1, h2 {
   padding: 0;
 }
 
-.nav-link, .navbar-brand {
+.nav-link {
   color: white;
 }
 
+.nav-bar-brand-img {
+  max-width: 125px;
+  max-height: 100px;
+}
 
 .nav {
   max-width: 720px;

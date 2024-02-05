@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 // Nav Bar Items
 import navItems from "./sample/nav-items.js";
+import logo from "./sample/logo.png"
 
 // Navigation Bar Component
 function NavBar () {
@@ -15,7 +16,9 @@ function NavBar () {
   return ([
     <Container key="nav-bar-parent" className="nav-bar-parent">
       <Navbar key="nav-bar" className="nav-bar">
-        <NavbarBrand className="link" href="/"> Tiger Hong </NavbarBrand>
+        <NavbarBrand key="nav-bar-brand-parent" className="link" href="/">
+          <img src={logo} key="nav-bar-brand" className="nav-bar-brand-img"></img>
+        </NavbarBrand>
         <Nav key="nav" className="nav">
         {navItems.map( (currentLink, index) => {
             return(
