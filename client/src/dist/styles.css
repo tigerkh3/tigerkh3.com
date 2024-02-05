@@ -14,10 +14,12 @@ h1, h2 {
 /* Home Page CSS */
 
 #root {
-  background: linear-gradient(.375turn, #111111, #474747, #111111) ;
+  background: linear-gradient(.375turn, #111111, #474747, #111111);
   color: white;
-  min-height: 100vh;
+  zoom: 85%;
+  min-height: 120vh;
   font-family: 'Montserrat';
+
 }
 
 .home-parent {
@@ -106,29 +108,34 @@ h1, h2 {
 }
 
 .card-title-row {
-  padding: 7.5% 7.5% 0%;
+  padding: 12px;
 }
 
 .card-title {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  padding-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .card-description {
-  text-align: center;
-  padding: 7.5%;
-  margin: 0;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 0;
 }
 
 .card-link-col {
-  padding: 2.5%;
+  padding: 12px;
 }
 
 .card .link {
   border-radius: 5px;
   text-align: center;
   background: #474747;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px #00FF7F;
+  box-shadow: 0 0 10px #00FF7F;
 }
 
 
@@ -173,8 +180,6 @@ h1, h2 {
 .project-details-main h1, h2 {
   padding-top: 24px;
 }
-
-
 
 .project-details-main p {
   padding-top: 12px;

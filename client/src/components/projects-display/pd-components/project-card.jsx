@@ -13,7 +13,7 @@ function ProjectCard (props) {
     <Col sm="6" key={`project-card-col-${props.index}`} className={`card-col card-col-${props.index}`} >
       <div key={`project-card-${props.index}`} className={`card card-${props.index}`}>
         <Row key={`project-card-title-row-${props.index}`} className={`card-title-row card-row`}>
-          <h6 key={`project-card-title-${props.index}`} className={`card-title`}> {props.project.projName} </h6>
+          <h5 key={`project-card-title-${props.index}`} className={`card-title`}> {props.project.projName} </h5>
         </Row>
         <Row key={`project-card-description-row-${props.index}`} className={`card-description-row card-row`}>
           <p className={`card-description`}> {props.project.projDescription} </p>

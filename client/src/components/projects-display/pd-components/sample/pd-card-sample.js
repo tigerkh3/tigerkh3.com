@@ -7,6 +7,7 @@ const sampleCards = [
   projWLink: "kingmaker.io",
   projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
   projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
+  preview: "https://i.ibb.co/6rwXR4d/Kingmaker-io.png"
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const sampleCards = [
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
+    preview: "https://i.ibb.co/6rwXR4d/Kingmaker-io.png"
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const sampleCards = [
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
+    preview: "https://i.ibb.co/6rwXR4d/Kingmaker-io.png"
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ const sampleCards = [
     projWLink: "kingmaker.io",
     projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
+
   }
 ]
 
