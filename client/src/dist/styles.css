@@ -1,6 +1,6 @@
 /* Application CSS file */
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 h1, h2 {
   color: #00FF7F;
@@ -16,17 +16,15 @@ h1, h2 {
 #root {
   background: linear-gradient(.375turn, #111111, #474747, #111111);
   color: white;
-  zoom: 85%;
-  min-height: 120vh;
   font-family: 'Montserrat';
-
+  min-height: 100vh;
 }
 
 .home-parent {
   min-width: 100%;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 /* In Progress */
 
@@ -35,7 +33,7 @@ h1, h2 {
   padding-top: 60px;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 /* Navigation Bar CSS */
 
@@ -66,28 +64,58 @@ h1, h2 {
   text-align: center;
 }
 
+/* -------------------------------------------- */
 
-/* --------------------------------------------*/
+
+/* Footer CSS */
+
+.footer-parent {
+  max-width: 360px;
+}
+
+.card-footer {
+  border: solid 2px white;
+  margin-top: 60px;
+}
+
+.footer-row {
+  padding-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-socials {
+  padding-bottom: 12px;
+}
+
+.footer-socials-img {
+  padding: 0 6px 0 6px;
+  max-height: 36px;
+  max-width: 36px;
+}
+
+
+/* -------------------------------------------- */
 
 /* About Me Home CSS */
 
 .about-me-home-parent {
   max-width: 720px;
   padding-top: 60px;
+
 }
 
 .about-me-home-description {
   padding-top: 12px;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
-/* Projects Display & Cards Home CSS */
+/* Projects Display & Cards CSS */
 
 .projects-display-parent {
   max-width: 720px;
   padding-top: 60px;
-  padding-bottom: 24px;
 }
 
 .projects-cards-display {
@@ -139,7 +167,7 @@ h1, h2 {
 }
 
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 /* About Me  Main CSS */
 
@@ -147,9 +175,7 @@ h1, h2 {
 .about-me-parent {
   padding-top: 60px;
   max-width: 720px;
-  min-height: 100vh;
 }
-
 
 .about-me-intro, .about-me-stack-parent, .about-me-qualifications-parent {
   padding-top: 24px;
@@ -166,7 +192,7 @@ h1, h2 {
   background: white;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 
 /* Project Details CSS */
@@ -190,4 +216,4 @@ p a {
 }
 
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
