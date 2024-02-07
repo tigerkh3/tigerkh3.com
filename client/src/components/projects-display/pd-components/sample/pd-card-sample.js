@@ -11,7 +11,7 @@ const sampleCards = [
   {
   id: 2,
   projName: "KingMaker.io",
-  projWLink: "kingmaker.io",
+  projWLink: "https://kingmaker.io",
   projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
   projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
   },
