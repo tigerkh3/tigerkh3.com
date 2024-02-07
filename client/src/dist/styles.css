@@ -1,20 +1,22 @@
 /* Application CSS file */
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 h1, h2 {
-  color: #14A76C
+  color: hsl(150, 77%, 52%);;
+  font-weight: bold;
 }
 
 .link:hover, a:hover {
-  color: #14A76C
+  color: hsl(150, 77%, 52%);;
 }
 
 /* Home Page CSS */
 
 #root {
-  background: #272727;
+  background: linear-gradient(.375turn, #111111, #474747, #111111);
   color: white;
+  font-family: 'Montserrat';
   min-height: 100vh;
 }
 
@@ -22,19 +24,38 @@ h1, h2 {
   min-width: 100%;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
+
+/* In Progress */
+
+.InProgress {
+  max-width: 720px;
+  padding-top: 60px;
+  min-height: 70vh;
+
+}
+
+/* -------------------------------------------- */
 
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
-  min-width: 100%;
   padding: 0;
+  max-width: 1080px;
 }
 
-.nav-link, .navbar-brand {
+.nav-link {
   color: white;
 }
 
+.active {
+  color: hsl(150, 77%, 52%);;
+}
+
+.nav-bar-brand-img {
+  max-width: 100px;
+  max-height: 100px;
+}
 
 .nav {
   max-width: 720px;
@@ -45,28 +66,57 @@ h1, h2 {
   text-align: center;
 }
 
+/* -------------------------------------------- */
 
-/* --------------------------------------------*/
+
+/* Footer CSS */
+
+.footer-parent {
+  max-width: 390px;
+  padding-bottom: 36px;
+  padding-top: 36px;
+}
+
+.card-footer {
+  margin-top: 60px;
+}
+
+.footer-row {
+  padding-top: 12px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer-socials {
+  padding-bottom: 12px;
+}
+
+.footer-socials-img, .footer-tech-stack-img {
+  padding: 0 6px 0 6px;
+  max-height: 36px;
+  max-width: 36px;
+}
+/* -------------------------------------------- */
 
 /* About Me Home CSS */
 
 .about-me-home-parent {
   max-width: 720px;
   padding-top: 60px;
+
 }
 
 .about-me-home-description {
   padding-top: 12px;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
-/* Projects Display & Cards Home CSS */
+/* Projects Display & Cards CSS */
 
 .projects-display-parent {
   max-width: 720px;
   padding-top: 60px;
-  padding-bottom: 24px;
 }
 
 .projects-cards-display {
@@ -82,28 +132,29 @@ h1, h2 {
 .card {
   border-radius: 5px;
   margin: 5% 0%;
-  background: #767676;
+  background: #575757;
   color: white;
 }
 
 .card-title-row {
-  padding: 7.5% 7.5% 0%;
+  padding: 12px;
 }
 
 .card-title {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  padding-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
+  color: hsl(150, 77%, 52%);
 }
 
 .card-description {
-  text-align: center;
-  padding: 7.5%;
-  margin: 0;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 0;
 }
 
 .card-link-col {
-  padding: 2.5%;
+  padding: 12px;
 }
 
 .card .link {
@@ -112,8 +163,13 @@ h1, h2 {
   background: #474747;
 }
 
+.card:hover {
+  -webkit-box-shadow: 0 0 10px hsl(150, 84%, 70%);
+  box-shadow: 0 0 10px hsl(150, 84%, 70%);
+}
 
-/* --------------------------------------------*/
+
+/* -------------------------------------------- */
 
 /* About Me  Main CSS */
 
@@ -121,9 +177,7 @@ h1, h2 {
 .about-me-parent {
   padding-top: 60px;
   max-width: 720px;
-  min-height: 100vh;
 }
-
 
 .about-me-intro, .about-me-stack-parent, .about-me-qualifications-parent {
   padding-top: 24px;
@@ -140,7 +194,7 @@ h1, h2 {
   background: white;
 }
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */
 
 
 /* Project Details CSS */
@@ -155,8 +209,6 @@ h1, h2 {
   padding-top: 24px;
 }
 
-
-
 .project-details-main p {
   padding-top: 12px;
 }
@@ -166,4 +218,4 @@ p a {
 }
 
 
-/* --------------------------------------------*/
+/* -------------------------------------------- */

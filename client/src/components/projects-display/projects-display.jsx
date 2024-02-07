@@ -10,6 +10,7 @@ import ProjectCard from './pd-components/project-card.jsx';
 
 // projects-display component
 function ProjectsDisplay (props) {
+
   return (
     <Container key={"projects-display-parent"} className={"projects-display-parent"}>
     <div key={"projects-display-heading-row"} className={`projects-display-heading-row`}>

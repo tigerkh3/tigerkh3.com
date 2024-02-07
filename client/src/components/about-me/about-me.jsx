@@ -26,7 +26,7 @@ function AboutMe () {
             )
           })}
           <div key="about-me-socials-parent" className="about-me-socials-parent">
-            <p key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </p>
+            <h2 key="about-me-socials-intro" className="about-me-socials-intro"> Check out my Socials Below! </h2>
             <div key="about-me-socials-links" className="about-me-socials-links">
               <img key="LI-img" className="about-me-socials-img li-img" src={linkedin} onClick={ () => {window.open("https://linkedin.com/in/tigerkh3")}}></img>
               <img key="GH-img" className="about-me-socials-img gh-img" alt="GitHub" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" onClick={ () => {window.open("https://github.com/tigerkh3")}}/>
