@@ -3,12 +3,12 @@
 /* -------------------------------------------- */
 
 h1, h2 {
-  color: #00FF7F;
+  color: hsl(150, 77%, 52%);;
   font-weight: bold;
 }
 
 .link:hover, a:hover {
-  color: #00FF7F;
+  color: hsl(150, 77%, 52%);;
 }
 
 /* Home Page CSS */
@@ -31,6 +31,8 @@ h1, h2 {
 .InProgress {
   max-width: 720px;
   padding-top: 60px;
+  min-height: 70vh;
+
 }
 
 /* -------------------------------------------- */
@@ -38,8 +40,8 @@ h1, h2 {
 /* Navigation Bar CSS */
 
 .nav-bar-parent {
-  min-width: 100%;
   padding: 0;
+  max-width: 1080px;
 }
 
 .nav-link {
@@ -47,11 +49,11 @@ h1, h2 {
 }
 
 .active {
-  color: #00FF7F;
+  color: hsl(150, 77%, 52%);;
 }
 
 .nav-bar-brand-img {
-  max-width: 125px;
+  max-width: 100px;
   max-height: 100px;
 }
 
@@ -70,31 +72,30 @@ h1, h2 {
 /* Footer CSS */
 
 .footer-parent {
-  max-width: 360px;
+  max-width: 390px;
+  padding-bottom: 36px;
+  padding-top: 36px;
 }
 
 .card-footer {
-  border: solid 2px white;
   margin-top: 60px;
 }
 
 .footer-row {
   padding-top: 12px;
-  text-align: center;
   width: 100%;
+  font-size: 14px;
 }
 
 .footer-socials {
   padding-bottom: 12px;
 }
 
-.footer-socials-img {
+.footer-socials-img, .footer-tech-stack-img {
   padding: 0 6px 0 6px;
   max-height: 36px;
   max-width: 36px;
 }
-
-
 /* -------------------------------------------- */
 
 /* About Me Home CSS */
@@ -143,6 +144,7 @@ h1, h2 {
   padding-top: 12px;
   margin-bottom: 0;
   text-align: left;
+  color: hsl(150, 77%, 52%);
 }
 
 .card-description {
@@ -162,8 +164,8 @@ h1, h2 {
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 0 10px #00FF7F;
-  box-shadow: 0 0 10px #00FF7F;
+  -webkit-box-shadow: 0 0 10px hsl(150, 84%, 70%);
+  box-shadow: 0 0 10px hsl(150, 84%, 70%);
 }
 
 

@@ -47,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(pdf|png|jpe?g|gif)$/i,
+        test: /\.(pdf|png|jpe?g|gif|svg)$/i,
         use: [
           {
           loader: "file-loader"
