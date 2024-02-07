@@ -72,9 +72,9 @@ h1, h2 {
 /* Footer CSS */
 
 .footer-parent {
-  max-width: 390px;
-  padding-bottom: 36px;
+  max-width: 720px;
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .card-footer {
@@ -84,7 +84,11 @@ h1, h2 {
 .footer-row {
   padding-top: 12px;
   width: 100%;
-  font-size: 14px;
+  font-size: 10px;
+}
+
+.footer-tech-stack {
+  text-align: right;
 }
 
 .footer-socials {
@@ -93,8 +97,8 @@ h1, h2 {
 
 .footer-socials-img, .footer-tech-stack-img {
   padding: 0 6px 0 6px;
-  max-height: 36px;
-  max-width: 36px;
+  max-height: 30px;
+  max-width: 30px;
 }
 /* -------------------------------------------- */
 

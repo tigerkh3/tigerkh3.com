@@ -23,7 +23,7 @@ function ProjectCard (props) {
             <p className={`card-link-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
           </Col>
           <Col key={`card-web-link-col-${props.index}`} className={`card-link-col`}>
-            <p className={`card-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink)}}> Demo </p>
+            <p className={`card-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink, 'popup=1')}}> Demo </p>
           </Col>
           <Col key={`card-github-link-col-${props.index}`} className={`card-link-col`}>
             <p className={`card-link-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> Source </p>
