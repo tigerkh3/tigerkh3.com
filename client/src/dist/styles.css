@@ -133,11 +133,21 @@ h1, h2 {
   padding: 0% 2.5%;
 }
 
+.card-col {
+  max-height: 220px;
+  margin-bottom: 24px;
+}
+
 .card {
   border-radius: 5px;
-  margin: 5% 0%;
   background: #575757;
   color: white;
+  opacity: 0;
+  transition: .5s ease;
+  min-height: 220px;
+  max-width: 320px;
+  float: left;
+  transform: translateY(-100%);
 }
 
 .card-title-row {
@@ -167,9 +177,35 @@ h1, h2 {
   background: #474747;
 }
 
+.card-2 {
+  margin-top: 24px;
+}
+
 .card:hover {
   -webkit-box-shadow: 0 0 10px hsl(150, 84%, 70%);
   box-shadow: 0 0 10px hsl(150, 84%, 70%);
+  opacity: 1;
+}
+
+.project-card-preview-div {
+  border-radius: 5px;
+  max-height: 220px;
+  max-width: 320px;
+}
+
+.project-card-preview {
+  border-radius: 5px;
+  min-height: 220px;
+  max-width: 319px;
+}
+
+.project-card-preview {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.project-card-preview:hover {
+  opacity: 0.1;
 }
 
 
