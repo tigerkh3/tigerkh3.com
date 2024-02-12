@@ -18,6 +18,7 @@ h1, h2 {
   color: white;
   font-family: 'Montserrat';
   min-height: 100vh;
+  padding: 0 12px;
 }
 
 .home-parent {
@@ -123,12 +124,11 @@ h1, h2 {
   padding-top: 60px;
 }
 
-.projects-cards-display {
-  padding-top: 24px;
-}
+/* .projects-cards-display {
+  no need for padding with margin instead for spacing between project cards
+} */
 
 .card-overlay-row {
-  margin: 12px;
   margin: 0;
   padding: 0% 24px;
 }
@@ -137,109 +137,16 @@ h1, h2 {
   margin-bottom: 24px;
   max-height: fit-content;
   position: relative;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
-
-.card-overlay {
-  padding: 20% 0%;
-  max-width: 672px;
-  max-height: 436px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: black;
-  color: white;
-  opacity: 0;
-  transition: .5s ease;
-  margin: 0;
-  position: absolute;
-}
-
-@media only screen and (max-width: 760px) {
-  .card-overlay {
-    padding: 20% 0%;
-    max-width: 516px;
-    max-height: 436px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: .5s ease;
-    margin: 0;
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .card-overlay {
-    padding: 10% 0%;
-    max-width: 508px;
-    max-height: 330px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: .5s ease;
-    margin: 0;
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .card-overlay {
-    padding: 10% 0%;
-    max-width: 476px;
-    max-height: 309px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: .5s ease;
-    margin: 0;
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .card-overlay {
-    padding: 5% 0%;
-    max-width: 328px;
-    max-height: 215px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: .5s ease;
-    margin: 0;
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .card-overlay {
-    padding: 5% 0%;
-    max-width: 328px;
-    max-height: 215px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: .5s ease;
-    margin: 0;
-    position: absolute;
-  }
-}
-
 
 .card-overlay-title-row {
   padding: 12px;
 }
 
 .card-overlay-title {
-  padding-top: 12px;
+  padding: 12px 24px 0px;
   margin-bottom: 0;
   text-align: left;
   color: hsl(150, 77%, 52%);
@@ -264,11 +171,16 @@ h1, h2 {
 .project-card-preview-div:hover .card-overlay {
   bottom: 0;
   height: 100%;
-  opacity: 1;
+  opacity: .875;
+  background: #232323;
+  -webkit-box-shadow: 0 0 20px hsl(150, 84%, 70%);
+  box-shadow: 0 0 20px hsl(150, 84%, 70%);
 }
 
 .project-card-preview-div {
+  padding: 0;
   border-radius: 5px;
+  border: solid black 1px;
 }
 
 .project-card-preview {
@@ -279,12 +191,159 @@ h1, h2 {
 
 .project-card-preview {
   opacity: 1;
-  transition: .5s ease;
 }
 
-.project-card-preview:hover {
-  opacity: 0.05;
-  background: black;
+.card-overlay {
+  padding: 25% 0%;
+  max-width: 696px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  opacity: 0;
+  transition: 0.5s ease;
+  margin: 0;
+  position: absolute;
+  bottom: 0%;
+}
+
+/* custom responsive css for card overlay */
+
+@media only screen and (max-width: 760px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 540px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 508px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 472px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 358px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 342px;
+    max-height: 272px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-overlay {
+    padding: 2.5% 0%;
+    max-width: 318px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-overlay {
+    padding: 5% 0%;
+    max-width: 303px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card-overlay {
+    padding: 5% 0%;
+    max-width: 288px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .card-overlay {
+    padding: 0% 0%;
+    max-width: 208px;
+    overflow: scroll;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
 }
 
 
