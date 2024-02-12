@@ -20,7 +20,7 @@ const sampleCards = [
     projName: "Quiz Whiz",
     projWLink: "http://35.91.223.95/",
     projGHLink: "https://github.com/potato-fixers/quiz-whiz",
-    projDescription: "Quiz Whiz is an online quiz platform that allows users to create, take, and share quizzes on various topics.",
+    projDescription: "Quiz Whiz an online quiz platform!",
 
   },
 ]
