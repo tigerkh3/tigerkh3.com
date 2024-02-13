@@ -13,7 +13,7 @@ const sampleCards = [
     projName: "tigerkh3.io",
     projWLink: "tigerkh3.io",
     projGHLink: "https://github.com/tigerkh3/tigerkh3.io",
-    projDescription: "My Personal Portfolio Website built by hand!",
+    projDescription: "My Personal Portfolio Website built from scratch!",
   },
 
 ]
