@@ -17,22 +17,6 @@ const sampleRM = [
     projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
     projReadMe: "https://raw.githubusercontent.com/tigerkh3/road2fantasychamp/main/README.md"
   },
-  {
-    id: 3,
-    projName: "KingMaker.io3",
-    projWLink: "kingmaker.io",
-    projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
-    projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
-    projReadMe: "https://raw.githubusercontent.com/tigerkh3/road2fantasychamp/main/README.md"
-  },
-  {
-    id: 4,
-    projName: "KingMaker.io4",
-    projWLink: "kingmaker.io",
-    projGHLink: "https://github.com/tigerkh3/road2fantasychamp",
-    projDescription: "ESPN Fantasy Basketball Live Analytics Tool",
-    projReadMe: "https://raw.githubusercontent.com/tigerkh3/road2fantasychamp/main/README.md"
-  }
 ]
 
 export default sampleRM;

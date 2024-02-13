@@ -38,6 +38,7 @@ function ProjectDetails () {
       .replace(/[^a-z0-9 -]/g, "")
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-");
+    console.log(str);
     return str;
   }
 

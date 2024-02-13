@@ -11,30 +11,30 @@ import r2fc from "../../../../screenshots/road2fantasychamp.com.png"
 function ProjectCard (props) {
 
   return ([
-    <Col sm="6" key={`project-card-col-${props.index}`} className={`card-col card-col-${props.index}`} >
-      <div key="project-card-preview-div" className="project-card-preview-div">
+    <Col xs="12" key={`project-card-col-${props.index}`} className={`card-col card-col-${props.index}`} >
+      <Container key="project-card-preview-div" className="project-card-preview-div">
         <img key="project-card-preview-img" src={r2fc} className="project-card-preview">
         </img>
-        <div key={`project-card-${props.index}`} className={`card card-${props.index}`}>
-          <Row key={`project-card-title-row-${props.index}`} className={`card-title-row card-row`}>
-            <h5 key={`project-card-title-${props.index}`} className={`card-title`}> {props.project.projName} </h5>
+        <Container key={`project-card-overlay-${props.index}`} className={`card-overlay card-overlay-${props.index}`}>
+          <Row key={`project-card-overlay-title-row-${props.index}`} className={`card-overlay-title-row card-overlay-row`}>
+            <h5 key={`project-card-overlay-title-${props.index}`} className={`card-overlay-title`}> {props.project.projName} </h5>
           </Row>
-          <Row key={`project-card-description-row-${props.index}`} className={`card-description-row card-row`}>
-            <p className={`card-description`}> {props.project.projDescription} </p>
+          <Row key={`project-card-overlay-description-row-${props.index}`} className={`card-overlay-description-row card-overlay-row`}>
+            <p className={`card-overlay-description`}> {props.project.projDescription} </p>
           </Row>
-          <Row key={`project-card-links-row-${props.index}`} className={`card-links-row card-row`}>
-            <Col key={`card-details-link-col-${props.index}`} className={`card-link-col`}>
-              <p className={`card-link-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
+          <Row key={`project-card-overlay-links-row-${props.index}`} className={`card-overlay-links-row card-overlay-row`}>
+            <Col key={`card-overlay-details-link-col-${props.index}`} className={`card-overlay-link-col`}>
+              <p className={`card-overlay-link-details link`} onClick={ ()=> {location.href=`/project-details/${props.project.id}`}}> Details </p>
             </Col>
-            <Col key={`card-web-link-col-${props.index}`} className={`card-link-col`}>
-              <p className={`card-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink, 'popup=1')}}> Demo </p>
+            <Col key={`card-overlay-web-link-col-${props.index}`} className={`card-overlay-link-col`}>
+              <p className={`card-overlay-link-wl link`} onClick={ ()=> {window.open(props.project.projWLink, 'popup=1')}}> Demo </p>
             </Col>
-            <Col key={`card-github-link-col-${props.index}`} className={`card-link-col`}>
-              <p className={`card-link-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> Source </p>
+            <Col key={`card-overlay-github-link-col-${props.index}`} className={`card-overlay-link-col`}>
+              <p className={`card-overlay-link-gh link`} onClick={ ()=> {window.open(props.project.projGHLink)}}> Source </p>
             </Col>
           </Row>
-        </div>
-      </div>
+        </Container>
+      </Container>
     </Col>
   ])
 }

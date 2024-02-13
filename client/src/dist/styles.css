@@ -18,6 +18,7 @@ h1, h2 {
   color: white;
   font-family: 'Montserrat';
   min-height: 100vh;
+  padding: 0 12px;
 }
 
 .home-parent {
@@ -123,89 +124,226 @@ h1, h2 {
   padding-top: 60px;
 }
 
-.projects-cards-display {
-  padding-top: 24px;
-}
+/* .projects-cards-display {
+  no need for padding with margin instead for spacing between project cards
+} */
 
-.card-row {
-  margin: 1%;
+.card-overlay-row {
   margin: 0;
-  padding: 0% 2.5%;
+  padding: 0% 24px;
 }
 
 .card-col {
-  max-height: 220px;
   margin-bottom: 24px;
+  max-height: fit-content;
+  position: relative;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
-.card {
-  border-radius: 5px;
-  background: #575757;
-  color: white;
-  opacity: 0;
-  transition: .5s ease;
-  min-height: 220px;
-  max-width: 320px;
-  float: left;
-  transform: translateY(-100%);
-}
-
-.card-title-row {
+.card-overlay-title-row {
   padding: 12px;
 }
 
-.card-title {
-  padding-top: 12px;
+.card-overlay-title {
+  padding: 12px 24px 0px;
   margin-bottom: 0;
   text-align: left;
   color: hsl(150, 77%, 52%);
 }
 
-.card-description {
+.card-overlay-description {
   text-align: left;
   padding: 12px;
   margin-bottom: 0;
 }
 
-.card-link-col {
+.card-overlay-link-col {
   padding: 12px;
 }
 
-.card .link {
+.card-overlay .link {
   border-radius: 5px;
   text-align: center;
   background: #474747;
 }
 
-.card-2 {
-  margin-top: 24px;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 0 10px hsl(150, 84%, 70%);
-  box-shadow: 0 0 10px hsl(150, 84%, 70%);
-  opacity: 1;
+.project-card-preview-div:hover .card-overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: .875;
+  background: #232323;
+  -webkit-box-shadow: 0 0 20px hsl(150, 84%, 70%);
+  box-shadow: 0 0 20px hsl(150, 84%, 70%);
 }
 
 .project-card-preview-div {
+  padding: 0;
   border-radius: 5px;
-  max-height: 220px;
-  max-width: 320px;
 }
 
 .project-card-preview {
   border-radius: 5px;
-  min-height: 220px;
-  max-width: 319px;
+  min-height: 180px;
+  max-width: 100%;
 }
 
 .project-card-preview {
   opacity: 1;
-  transition: .5s ease;
 }
 
-.project-card-preview:hover {
-  opacity: 0.1;
+.card-overlay {
+  padding: 25% 0%;
+  height: 100%;
+  max-width: 696px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  opacity: 0;
+  transition: 0.5s ease;
+  margin: 0;
+  position: absolute;
+  bottom: 0%;
+}
+
+/* custom responsive css for card overlay */
+
+@media only screen and (max-width: 760px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 540px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 508px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 472px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 358px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 342px;
+    max-height: 272px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-overlay {
+    padding: 2.5% 0%;
+    max-width: 318px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-overlay {
+    padding: 5% 0%;
+    max-width: 303px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card-overlay {
+    padding: 5% 0%;
+    max-width: 288px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .card-overlay {
+    padding: 0% 0%;
+    max-width: 208px;
+    overflow: scroll;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+  }
 }
 
 
