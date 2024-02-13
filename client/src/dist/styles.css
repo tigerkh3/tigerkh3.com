@@ -195,6 +195,7 @@ h1, h2 {
 
 .card-overlay {
   padding: 25% 0%;
+  height: 100%;
   max-width: 696px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
