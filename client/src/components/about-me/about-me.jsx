@@ -47,6 +47,10 @@ function AboutMe () {
           <img key="JS-img" className="about-me-stack-img" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
           <img key="React-img" className="about-me-stack-img" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
           <img key="Node-img" className="about-me-stack-img" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <img key="Express-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          <img key="CSS-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+          <img key="Reactstrap-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+          <img key="AWS-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"/>
           <img key="Mongo-img" className="about-me-stack-img" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
           <img key="Postgres-img" className="about-me-stack-img" alt="PostgreSQL" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png"/>
           <img key="SQL-img" className="about-me-stack-img" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
