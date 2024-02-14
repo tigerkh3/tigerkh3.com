@@ -5,7 +5,6 @@ import "../../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import sample
 import { Container, Row, Col, Button } from "reactstrap";
-import r2fc from "../../../../screenshots/road2fantasychamp.com.png"
 
 
 // project-display child component is project-card
@@ -14,7 +13,7 @@ function ProjectCard (props) {
   return ([
     <Col xs="12" key={`project-card-col-${props.index}`} className={`card-col card-col-${props.index}`} >
       <Container key="project-card-preview-div" className="project-card-preview-div">
-        <img key="project-card-preview-img" src={r2fc} className="project-card-preview">
+        <img key="project-card-preview-img" src={require('./project-display-assets/road2fantasychamp.com.png')} className="project-card-preview">
         </img>
         <Container key={`project-card-overlay-${props.index}`} className={`card-overlay card-overlay-${props.index}`}>
           <Row key={`project-card-overlay-title-row-${props.index}`} className={`card-overlay-title-row card-overlay-row`}>

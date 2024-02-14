@@ -5,11 +5,10 @@ import { Container, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../dist/styles.css";
 // import sample
-import sampleAM from "./sample/about-me-sample.js"
-import linkedin from "./icons/linkedin.png"
-import resumeicon from "./icons/resume.png"
+import linkedin from "./about-me-assets/linkedin.png"
+import resumeicon from "./about-me-assets/resume.png"
 // import our pdf
-import Resume from "../../../resume/Tiger_Hong_Resume.pdf"
+import Resume from "./about-me-assets/Tiger_Hong_Resume.pdf"
 // App Child Components
 
 
