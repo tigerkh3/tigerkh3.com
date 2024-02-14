@@ -32,8 +32,9 @@ app.get("/projectData", (req, res) => {
   })
 })
 
-app.get("/readmeData", (req, res) => {
+app.get("/readmeData/:id", (req, res) => {
   const id = req.params.id;
+
   getReadMe(id , (err, result) => {
     if (err) {
       console.log("server error msg", err)

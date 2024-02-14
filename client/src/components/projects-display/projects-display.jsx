@@ -17,7 +17,7 @@ function ProjectsDisplay (props) {
   useEffect( () => {
     // call to our server
 
-    axios.get("http://localhost:6001/api")
+    axios.get("http://localhost:6001/projectData")
     .then ( (result) => {
       console.log(result.data);
       setProjectData(result.data);

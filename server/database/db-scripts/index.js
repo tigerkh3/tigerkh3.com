@@ -10,7 +10,7 @@ db.query('CREATE TABLE projects (id SERIAL, project_name TEXT, web_link TEXT, gi
         console.log('failed to insert data', err)
       } else {
         console.log('project 1 inserted')
-        db.query(`INSERT INTO projects (project_name, web_link, github_link, project_description, read_me) VALUES ('My Personal Page', '/', 'https://github.com/tigerkh3/tigerkh3.io', 'My Personal Portfolio Website built from scratch!', 'https://raw.githubusercontent.com/tigerkh3/tigerkh.com/main/README.md')`, (err, res) => {
+        db.query(`INSERT INTO projects (project_name, web_link, github_link, project_description, read_me) VALUES ('My Personal Page', '/', 'https://github.com/tigerkh3/tigerkh3.io', 'My Personal Portfolio Website built from scratch!', 'https://raw.githubusercontent.com/tigerkh3/tigerkh3.com/main/README.md')`, (err, res) => {
           if (err) {
             console.log('failed to insert data', err)
           } else {

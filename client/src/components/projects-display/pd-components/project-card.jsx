@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import CSS styling and reactstrap components
 import "../../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";

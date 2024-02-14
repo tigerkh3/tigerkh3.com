@@ -48,11 +48,7 @@ module.exports = {
       },
       {
         test: /\.(pdf|png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-          loader: "file-loader"
-          }
-        ]
+        type: 'asset/resource',
       },
       {
         test: /\.md$/,
