@@ -4,7 +4,6 @@ import axios from "axios";
 import "../../dist/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "reactstrap";
-// sample projects database object
 // project display child component
 import ProjectCard from './pd-components/project-card.jsx';
 

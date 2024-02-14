@@ -1,12 +1,12 @@
 import React from "react";
 // css styles and reactstrap components
-import "../../../../dist/styles.css";
+import "../../../dist/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "reactstrap";
-import linkedin from "./about-me-home-assets/icons/linkedin.png"
+import linkedin from "./about-me-home-assets/linkedin.png"
 
 // import sample text
-import sampleAM from "./about-me-home-assets/sample/about-me-home-sample.js"
+import sampleAM from "./about-me-home-assets/about-me-home-sample.js"
 
 // about-me component
 function AboutMeHome () {
