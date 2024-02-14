@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../../../dist/styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "reactstrap";
-import r2fc from "./pd-components/project-display-assets/road2fantasychamp.com.png"
+import r2fc from "./project-display-assets/road2fantasychamp.com.png"
 
 
 // project-display child component is project-card
