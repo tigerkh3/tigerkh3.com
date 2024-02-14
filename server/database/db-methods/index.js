@@ -11,8 +11,8 @@ let getProjects = (data, callback) => {
   })
 }
 
-let getReadMe = (data, callback) => {
-  db.query(`SELECT read_me FROM projects WHERE id=${data}`, (err, res) => {
+let getReadMe = (id, callback) => {
+  db.query(`SELECT read_me FROM projects WHERE id=${id}`, (err, res) => {
     if (err) {
       console.log("db error message, readme", err)
       callback(err, null);

@@ -15,29 +15,22 @@ function ProjectDetails () {
 
   const [markdown, setMarkDown] = useState("")
 
-  // useEffect( () => {
+  useEffect( () => {
 
-  //   // -- add functionality --
-  //   // start by finding out which project id we're working with
-  //   // after we find our id we make a call to the database to find
-  //   // the associated project
-  //   // then we access our github link through the project
-  //   // then run below
-
-  //   // axios.get("http://localhost:6001/readme")
-  //   // .then ( (result) => {
-  //   //   console.log('should be our details', result)
-  //   // })
+    // axios.get("http://localhost:6001/readmeData")
+    // .then ( (result) => {
+    //   console.log('should be our details', result)
+    // })
 
 
-    fetch(`${sampleRM[0].projReadMe}`)
-    .then((result) => {
-      result.text()
-      .then((text) => {
-        setMarkDown(text)
-      })
-    })
-  // }, [false])
+    // fetch(`${sampleRM[0].projReadMe}`)
+    // .then((result) => {
+    //   result.text()
+    //   .then((text) => {
+    //     setMarkDown(text)
+    //   })
+    // })
+  }, [false])
 
   const generateSlug = (string) => {
     let str = string.replace(/^\s+|\s+$/g, "");

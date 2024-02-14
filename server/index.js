@@ -21,6 +21,7 @@ const { getProjects, getReadMe } = require("./database/db-methods/index.js")
 
 //server routes
 app.get("/projectData", (req, res) => {
+
   getProjects(true , (err, result) => {
     if (err) {
       console.log("server error msg", err)
@@ -32,24 +33,23 @@ app.get("/projectData", (req, res) => {
 })
 
 app.get("/readmeData", (req, res) => {
-  getReadMe(true , (err, result) => {
+  const id = req.params.id;
+  getReadMe(id , (err, result) => {
     if (err) {
       console.log("server error msg", err)
       res.sendStatus(404);
     } else {
+      res.send(result.rows[0].read_me);
 
     }
   })
 })
 
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/src/dist/index.html"))
 })
 
-app.get("/project-details/:id", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/src/dist/index.html"))
-})
 
 
 
