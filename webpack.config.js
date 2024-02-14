@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "client", "src", "dist"),
     publicPath: "/",
     filename: "bundle.js",
+    assetModuleFilename: "assets/[hash][ext][query]"
   },
   devServer: {
     static: [
@@ -47,24 +48,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.(pdf|png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-          loader: "file-loader"
-          }
-        ]
+        test: /\.(pdf|png|jpe?g|gif|svg|md|html)$/i,
+        type: 'asset/resource',
       },
-      {
-        test: /\.md$/,
-        use: [
-          {
-            loader: "html-loader",
-          },
-          {
-            loader: "remark-loader",
-          },
-        ],
-      }
     ]
   },
 

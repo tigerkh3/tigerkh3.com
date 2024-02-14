@@ -4,7 +4,7 @@ import { Container } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../dist/styles.css";
 // home page child components
-import AboutMeHome from "./home-components/about-me/about-me.jsx";
+import AboutMeHome from "./home-components/about-me.jsx";
 import ProjectsDisplay from "../projects-display/projects-display.jsx";
 
 // home page parent component

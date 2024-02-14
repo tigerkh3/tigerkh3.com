@@ -10,8 +10,6 @@ import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
 import InProgress from "./src/components/in-progress/in-progress.jsx"
 import ProjectDetails from "./src/components/projects-details/project-details.jsx"
 import ProjectsDisplay from "./src/components/projects-display/projects-display.jsx"
-import sampleCards from "./src/components/projects-display/pd-components/sample/pd-card-sample.js"
-
 
 const router = createBrowserRouter([
   {

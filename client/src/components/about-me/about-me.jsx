@@ -1,26 +1,36 @@
 // import react
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Container, Row } from "reactstrap";
 // import css and styling
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../dist/styles.css";
 // import sample
-import sampleAM from "./sample/about-me-sample.js"
-import linkedin from "./icons/linkedin.png"
-import resumeicon from "./icons/resume.png"
+import linkedin from "./about-me-assets/linkedin.png"
+import resumeicon from "./about-me-assets/resume.png"
 // import our pdf
-import Resume from "../../../resume/Tiger_Hong_Resume.pdf"
+import Resume from "./about-me-assets/Tiger_Hong_Resume.pdf"
 // App Child Components
 
 
 // Overaching App Component
 function AboutMe () {
+
+  const [introMain, setIntro] = useState("")
+
+  useEffect( () => {
+    axios.get("http://localhost:6001/about-me-home")
+    .then((result) => {
+      setIntro(result.data.intro_main);
+    })
+  }, [])
+
   return (
     <Container key="about-me-parent" className="about-me-parent">
       <Container key="about-me-intro" className="about-me-intro-parent">
         <h1 key="about-me-header" className="about-me-header header"> About Me </h1>
         <div key="about-me-intro" className="about-me-intro">
-          {sampleAM.intro.split("\n").map( (currentParagraph, index) => {
+          {introMain.split("\n").map( (currentParagraph, index) => {
             return (
               <p key={`about-me-intro-p-${index}`} className="about-me-intro-p"> {currentParagraph} </p>
             )
@@ -47,6 +57,10 @@ function AboutMe () {
           <img key="JS-img" className="about-me-stack-img" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
           <img key="React-img" className="about-me-stack-img" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
           <img key="Node-img" className="about-me-stack-img" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <img key="Express-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          <img key="CSS-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+          <img key="Reactstrap-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+          <img key="AWS-img" className="about-me-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"/>
           <img key="Mongo-img" className="about-me-stack-img" alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
           <img key="Postgres-img" className="about-me-stack-img" alt="PostgreSQL" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png"/>
           <img key="SQL-img" className="about-me-stack-img" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
