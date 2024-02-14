@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 });
 
 // api methods
-const { getProjects, getReadMe } = require("./database/db-methods/index.js")
+const { getProjects, getReadMe, getAboutMe } = require("./database/db-methods/index.js")
 
 //server routes
 app.get("/projectData", (req, res) => {
@@ -28,6 +28,18 @@ app.get("/projectData", (req, res) => {
       res.sendStatus(404);
     } else {
       res.send(result.rows);
+    }
+  })
+})
+
+app.get("/about-me-home", (req, res) => {
+  getAboutMe(true, (err, result) => {
+    if (err) {
+      console.log("server error msg", err)
+      res.sendStatus(404);
+    } else {
+      res.send(result.rows[0]);
+
     }
   })
 })

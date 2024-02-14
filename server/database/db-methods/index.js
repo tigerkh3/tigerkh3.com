@@ -22,6 +22,19 @@ let getReadMe = (id, callback) => {
   })
 }
 
+let getAboutMe = (data, callback) => {
+  db.query(`SELECT * FROM aboutme`, (err, res) => {
+    if (err) {
+      console.log("db error message, get aboutme", err)
+      callback(err, null);
+    } else {
+      callback(null, res);
+    }
+  })
+}
+
 module.exports.getProjects = getProjects;
 
 module.exports.getReadMe = getReadMe;
+
+module.exports.getAboutMe = getAboutMe;

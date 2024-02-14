@@ -15,10 +15,8 @@ function ProjectsDisplay (props) {
   // make a request to our server and then our database
   useEffect( () => {
     // call to our server
-
     axios.get("http://localhost:6001/projectData")
     .then ( (result) => {
-      console.log(result.data);
       setProjectData(result.data);
     })
   }, [false])

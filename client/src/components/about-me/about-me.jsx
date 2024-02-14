@@ -1,5 +1,6 @@
 // import react
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Container, Row } from "reactstrap";
 // import css and styling
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,12 +15,22 @@ import Resume from "./about-me-assets/Tiger_Hong_Resume.pdf"
 
 // Overaching App Component
 function AboutMe () {
+
+  const [introMain, setIntro] = useState("")
+
+  useEffect( () => {
+    axios.get("http://localhost:6001/about-me-home")
+    .then((result) => {
+      setIntro(result.data.intro_main);
+    })
+  }, [])
+
   return (
     <Container key="about-me-parent" className="about-me-parent">
       <Container key="about-me-intro" className="about-me-intro-parent">
         <h1 key="about-me-header" className="about-me-header header"> About Me </h1>
         <div key="about-me-intro" className="about-me-intro">
-          {sampleAM.intro.split("\n").map( (currentParagraph, index) => {
+          {introMain.split("\n").map( (currentParagraph, index) => {
             return (
               <p key={`about-me-intro-p-${index}`} className="about-me-intro-p"> {currentParagraph} </p>
             )

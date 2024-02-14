@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 // css styles and reactstrap components
 import "../../../dist/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "reactstrap";
 import linkedin from "./about-me-home-assets/linkedin.png"
 
-// import sample text
-import sampleAM from "./about-me-home-assets/about-me-home-sample.js"
-
 // about-me component
 function AboutMeHome () {
+
+  const [introHome, setIntro] = useState("")
+
+  useEffect( () => {
+    axios.get("http://localhost:6001/about-me-home")
+    .then((result) => {
+      setIntro(result.data.intro_home);
+    })
+  }, [])
+
   return ([
     <Container key="about-me-home" className="about-me-home-parent">
       <Row key="about-me-home-row" className="about-me-home-description-row">
       <h1 key="about-me-home-div-heading" className="about-me-home-description-heading"> Hi there! </h1>
-        {sampleAM.homePage.split('\n').map((currentParagraph, index) => {
+        {introHome.split('\n').map((currentParagraph, index) => {
           return (
             <div key={`about-me-home-div-${index}`} className="about-me-home-description">
               <h5 key="about-me-home-div-intro" className="about-me-home-description"> {currentParagraph}</h5>
