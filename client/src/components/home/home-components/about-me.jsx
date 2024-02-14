@@ -6,7 +6,7 @@ import { Container, Row } from "reactstrap";
 import linkedin from "./about-me-home-assets/icons/linkedin.png"
 
 // import sample text
-import sampleAM from "./about-me-home-assets/sample/about-me-sample.js"
+import sampleAM from "./about-me-home-assets/sample/about-me-home-sample.js"
 
 // about-me component
 function AboutMeHome () {
