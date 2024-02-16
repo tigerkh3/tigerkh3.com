@@ -82,9 +82,22 @@ h1, h2 {
   margin-top: 60px;
 }
 
+@media only screen and (max-width: 375px) {
+  .footer-parent {
+    max-width: 720px;
+    padding-top: 0px;
+    padding-bottom: 36px;
+  }
+
+  .card-footer {
+    margin-top: 24px;
+  }
+}
+
+
+
 .footer-row {
   padding-top: 12px;
-  width: 100%;
   font-size: 10px;
 }
 
