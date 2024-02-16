@@ -21,6 +21,12 @@ h1, h2 {
   padding: 0 12px;
 }
 
+@media only screen and (max-width: 400px) {
+  #root {
+    font-size: smaller;
+  }
+}
+
 .home-parent {
   min-width: 100%;
 }
@@ -60,6 +66,12 @@ h1, h2 {
 
 .nav {
   max-width: 720px;
+}
+
+@media only screen and (max-width: 400px) {
+  .nav {
+    flex-wrap: nowrap;
+  }
 }
 
 
@@ -378,6 +390,14 @@ h1, h2 {
 .about-me-parent {
   padding-top: 60px;
   max-width: 720px;
+}
+
+@media only screen and (max-width: 375px) {
+  .about-me-parent {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    max-width: 720px;
+  }
 }
 
 .about-me-intro, .about-me-stack-parent, .about-me-qualifications-parent {
