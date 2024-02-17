@@ -9,67 +9,32 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
 
 
-function JournalEditor () {
+function Journal () {
 
-  const [entry, setEntry] = useState("**Hello world!!!**");
-  const [title, setTitle] = useState("")
+  useEffect( () => {
 
-  function postEntry (e) {
-    e.preventDefault();
+  }, [])
 
-    var options = {
-      url: 'http://localhost:6001/journal-entry',
-      method: "post",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      data: {
-        title: title,
-        entry: entry
-      },
-    }
-
-    axios.default.request(options)
-  }
-
-  function handleInput (e) {
-    e.preventDefault();
-    setTitle(e.target.value);
+  const generateSlug = (string) => {
+    let str = string.replace(/^\s+|\s+$/g, "");
+    str = str.toLowerCase();
+    str = str
+      .replace(/[^a-z0-9 -]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
+    return str;
   }
 
   return (
-    <Container key="journal-entry-main-parent" className="journal-entry-main-parent">
-        <input
-        value={title}
-        onChange={handleInput}
-        >
-        </input>
-      <div className="container">
-        <MDEditor
-          value={entry}
-          onChange={setEntry}
-        />
-      </div>
-      <Button onClick={postEntry}> Post Entry </Button>
+    <Container key="project-details-main-parent" className="project-details-main-parent">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+           h1: ({ node, ...props }) => (
+             <h1 id={generateSlug(props.children)} {...props}></h1>
+           ),
+         }}
+         key="project-details-main" className="project-details-main" children={markdown}></ReactMarkdown>
     </Container>
-
   )
 }
-
-export default JournalEditor;
-
-/*
-
-## Test Entry #1
-
-I want to know if this data is able to be send to my backend server and store the information into my database.
-
-I want to test with 's '' and all the different symbols and such #$%#()!@*%!) .
-
-She's she she's he's him's tim's.
-
-And images like below:
-
-![image](https://github.com/tigerkh3/road2fantasychamp/assets/85322535/4322e292-6f45-4c09-a882-10189442fca6)
-
-*/

@@ -417,11 +417,31 @@ h1, h2 {
 
 /* -------------------------------------------- */
 
-/* Journal Entry CSS */
+/* Journal Editor CSS */
 
-.journal-entry-main-parent {
+.journal-editor-main-parent {
   padding-top: 60px;
   max-width: 720px;
+}
+
+.journal-editor-locked-p {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.journal-editor-locked-pw-entry {
+  display: block;
+}
+
+.journal-editor-locked-pw-button {
+  margin-top: 24px;
+}
+
+.journal-editor-locked-child {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
 
