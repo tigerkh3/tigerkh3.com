@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <ProjectDetails/>,
   },
   {
-    path: "/journal",
+    path: "/journal-editor",
     element: <JournalEditor />,
     errorElement: <InProgress />,
   }
