@@ -417,6 +417,13 @@ h1, h2 {
 
 /* -------------------------------------------- */
 
+/* Journal Entry CSS */
+
+.journal-entry-main-parent {
+  padding-top: 60px;
+  max-width: 720px;
+}
+
 
 /* Project Details CSS */
 

@@ -12,12 +12,14 @@ app.use(express.static(path.join(__dirname, "../client/src/dist")))
 
 // allow cross origin and localhost
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
 });
 
 // api methods
-const { getProjects, getReadMe, getAboutMe } = require("./database/db-methods/index.js")
+const { getProjects, getReadMe, getAboutMe, postJournalEntry } = require("./database/db-methods/index.js")
 
 //server routes
 app.get("/projectData", (req, res) => {
@@ -56,6 +58,20 @@ app.get("/readmeData/:id", (req, res) => {
 
     }
   })
+})
+
+app.post("/journal-entry", (req, res) => {
+
+  // posting our journal entry to our database
+  postJournalEntry(req.body, (err, result) => {
+    if (err) {
+      console.log('server err message', err)
+    } else {
+      console.log('success');
+      res.sendStatus(201);
+    }
+  })
+
 })
 
 
