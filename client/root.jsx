@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "projects",
-    element: <ProjectsDisplay compType={"main"}/>
+    element: <ProjectsDisplay />
   },
   {
     path: "project-details/:id",
@@ -36,9 +36,8 @@ const router = createBrowserRouter([
     errorElement: <InProgress />,
   },
   {
-    path: "/journal-editor",
+    path: `${process.env.REACT_APP_JOURNAL_EDITOR_PATH}`,
     element: <JournalEditor/>
-
   }
 ])
 
