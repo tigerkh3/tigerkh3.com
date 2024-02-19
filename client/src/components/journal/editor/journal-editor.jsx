@@ -19,7 +19,6 @@ function JournalEditor () {
   if (loggedIn) {
     return (
       <Editor />
-
     )
   } else {
     return (

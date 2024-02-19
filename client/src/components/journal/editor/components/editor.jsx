@@ -28,6 +28,13 @@ function Editor (props) {
       },
     }
     axios.default.request(options)
+    .then( (result) => {
+      if (result.status === 201) {
+        window.alert("Entry Success");
+      } else {
+        window.alert("Entry Failed");
+      }
+    })
   }
 
   function handleInput (e) {
@@ -40,16 +47,16 @@ function Editor (props) {
   return (
     <Container key="journal-editor-unlocked-parent" className="journal-editor-main-parent">
       <input
+        key="journal-editor-title-input"
+        className="journal-editor-title"
         value={title}
-        onChange={setTitle}
+        onChange={handleInput}
         >
       </input>
-      <div className="container">
-        <MDEditor
+      <MDEditor
           value={entry}
           onChange={setEntry}
-        />
-      </div>
+      />
       <Button onClick={postEntry}> Post Entry </Button>
     </Container>
   )
