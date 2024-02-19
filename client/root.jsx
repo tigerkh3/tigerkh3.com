@@ -8,7 +8,8 @@ import Footer from "./src/components/footer-bar/footer.jsx"
 import AboutMe from "./src/components/about-me/about-me.jsx"
 import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
 import InProgress from "./src/components/in-progress/in-progress.jsx"
-import JournalEditor from "./src/components/journal/journal-editor.jsx"
+import Journal from "./src/components/journal/journal.jsx"
+import JournalEditor from "./src/components/journal/editor/journal-editor.jsx";
 import ProjectDetails from "./src/components/projects-details/project-details.jsx"
 import ProjectsDisplay from "./src/components/projects-display/projects-display.jsx"
 
@@ -30,9 +31,14 @@ const router = createBrowserRouter([
     element: <ProjectDetails/>,
   },
   {
-    path: "/journal-editor",
-    element: <JournalEditor />,
+    path: "/journal",
+    element: <Journal />,
     errorElement: <InProgress />,
+  },
+  {
+    path: "/journal-editor",
+    element: <JournalEditor/>
+
   }
 ])
 

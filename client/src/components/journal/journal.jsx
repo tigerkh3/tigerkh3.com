@@ -26,15 +26,19 @@ function Journal () {
   }
 
   return (
-    <Container key="project-details-main-parent" className="project-details-main-parent">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-           h1: ({ node, ...props }) => (
-             <h1 id={generateSlug(props.children)} {...props}></h1>
-           ),
-         }}
-         key="project-details-main" className="project-details-main" children={markdown}></ReactMarkdown>
-    </Container>
+    // <Container key="project-details-main-parent" className="project-details-main-parent">
+    //   <ReactMarkdown
+    //     remarkPlugins={[remarkGfm]}
+    //     components={{
+    //        h1: ({ node, ...props }) => (
+    //          <h1 id={generateSlug(props.children)} {...props}></h1>
+    //        ),
+    //      }}
+    //      key="project-details-main" className="project-details-main" children={markdown}></ReactMarkdown>
+    // </Container>
+    // editor
+    <div> hi </div>
   )
 }
+
+export default Journal;
