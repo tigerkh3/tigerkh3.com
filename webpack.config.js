@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.resolve(__dirname, "client", "root.jsx"),
   output: {
     path: path.resolve(__dirname, "client", "src", "dist"),
