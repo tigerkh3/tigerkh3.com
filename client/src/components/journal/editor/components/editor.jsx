@@ -17,7 +17,7 @@ function Editor (props) {
   function postEntry (e) {
     e.preventDefault();
     var options = {
-      url: 'http://localhost:6001/journal-entry',
+      url: `${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_JOURNAL_POST_EP}`,
       method: "post",
       headers: {
         'Content-Type': 'application/json'

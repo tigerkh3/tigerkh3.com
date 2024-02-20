@@ -18,7 +18,7 @@ function ProjectDetails () {
   const { id } = useParams()
 
   useEffect( () => {
-    axios.get(`http://localhost:6001/readmeData/${id}`)
+    axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_README_EP}/${id}`)
     .then ( (result) => {
       console.log('should be our details', result.data)
       fetch(`${result.data}`)

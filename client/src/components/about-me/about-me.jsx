@@ -19,7 +19,7 @@ function AboutMe () {
   const [introMain, setIntro] = useState("")
 
   useEffect( () => {
-    axios.get("http://localhost:6001/about-me-home")
+    axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_ABOUTME_EP}`)
     .then((result) => {
       setIntro(result.data.intro_main);
     })

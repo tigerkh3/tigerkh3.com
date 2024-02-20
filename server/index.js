@@ -21,8 +21,9 @@ app.use((req, res, next) => {
 // api methods
 const { getProjects, getReadMe, getAboutMe, postJournalEntry } = require("./database/db-methods/index.js")
 
+
 //server routes
-app.get("/projectData", (req, res) => {
+app.get(`/${process.env.REACT_APP_PROJECTS_EP}`, (req, res) => {
 
   getProjects(true , (err, result) => {
     if (err) {
@@ -34,7 +35,7 @@ app.get("/projectData", (req, res) => {
   })
 })
 
-app.get("/about-me-home", (req, res) => {
+app.get(`/${process.env.REACT_APP_ABOUTME_EP}`, (req, res) => {
   getAboutMe(true, (err, result) => {
     if (err) {
       console.log("server error msg", err)
@@ -46,7 +47,7 @@ app.get("/about-me-home", (req, res) => {
   })
 })
 
-app.get("/readmeData/:id", (req, res) => {
+app.get(`/${process.env.REACT_APP_README_EP}/:id`, (req, res) => {
   const id = req.params.id;
 
   getReadMe(id , (err, result) => {
@@ -60,7 +61,7 @@ app.get("/readmeData/:id", (req, res) => {
   })
 })
 
-app.post("/journal-entry", (req, res) => {
+app.post(`/${process.env.REACT_APP_JOURNAL_POST_EP}`, (req, res) => {
 
   // posting our journal entry to our database
   postJournalEntry(req.body, (err, result) => {
@@ -78,11 +79,6 @@ app.post("/journal-entry", (req, res) => {
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/src/dist/index.html"))
 })
-
-
-
-
-
 
 
 var port = process.env.PORT;
