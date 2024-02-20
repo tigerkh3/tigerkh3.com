@@ -19,10 +19,12 @@ app.use((req, res, next) => {
 });
 
 // api methods
-const { getProjects, getReadMe, getAboutMe, postJournalEntry } = require("./database/db-methods/index.js")
+const { getProjects, getReadMe, getAboutMe, postJournalEntry, getJournalEntries, getJournalEntryData } = require("./database/db-methods/index.js")
 
 
-//server routes
+// Routes
+
+// projects display home/main data route
 app.get(`/${process.env.REACT_APP_PROJECTS_EP}`, (req, res) => {
 
   getProjects(true , (err, result) => {
@@ -35,6 +37,7 @@ app.get(`/${process.env.REACT_APP_PROJECTS_EP}`, (req, res) => {
   })
 })
 
+// about me home/main data route
 app.get(`/${process.env.REACT_APP_ABOUTME_EP}`, (req, res) => {
   getAboutMe(true, (err, result) => {
     if (err) {
@@ -42,11 +45,11 @@ app.get(`/${process.env.REACT_APP_ABOUTME_EP}`, (req, res) => {
       res.sendStatus(404);
     } else {
       res.send(result.rows[0]);
-
     }
   })
 })
 
+// project details readme route
 app.get(`/${process.env.REACT_APP_README_EP}/:id`, (req, res) => {
   const id = req.params.id;
 
@@ -56,14 +59,37 @@ app.get(`/${process.env.REACT_APP_README_EP}/:id`, (req, res) => {
       res.sendStatus(404);
     } else {
       res.send(result.rows[0].read_me);
-
     }
   })
 })
 
-app.post(`/${process.env.REACT_APP_JOURNAL_POST_EP}`, (req, res) => {
+app.get(`/${process.env.REACT_APP_JOURNAL_ENTRIES_EP}`, (req, res) => {
+  getJournalEntries(true, (err, result) => {
+    if (err) {
+      console.log("server error msg", err)
+      res.sendStatus(404);
+    } else {
+      res.send(result.rows);
+    }
+  })
 
-  // posting our journal entry to our database
+})
+
+app.get(`/${process.env.REACT_APP_JOURNAL_ENTRY_DATA_EP}/:id`, (req, res) => {
+  const id = req.params.id;
+  getJournalEntryData(id, (err, result) => {
+    if (err) {
+      console.log("server error msg", err)
+      res.sendStatus(404);
+    } else {
+      res.send(result.rows[0]);
+    }
+  })
+})
+
+
+// journal entry route
+app.post(`/${process.env.REACT_APP_JOURNAL_POST_EP}`, (req, res) => {
   postJournalEntry(req.body, (err, result) => {
     if (err) {
       console.log('server err message', err)
@@ -72,10 +98,9 @@ app.post(`/${process.env.REACT_APP_JOURNAL_POST_EP}`, (req, res) => {
       res.sendStatus(201);
     }
   })
-
 })
 
-
+// client sided routing serve files
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/src/dist/index.html"))
 })

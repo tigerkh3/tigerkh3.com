@@ -9,6 +9,7 @@ import AboutMe from "./src/components/about-me/about-me.jsx"
 import NavBar from "./src/components/navigation-bar/nav-bar.jsx"
 import InProgress from "./src/components/in-progress/in-progress.jsx"
 import Journal from "./src/components/journal/journal.jsx"
+import JournalEntry from "./src/components/journal-entries/journal-entry.jsx"
 import JournalEditor from "./src/components/journal/editor/journal-editor.jsx";
 import ProjectDetails from "./src/components/projects-details/project-details.jsx"
 import ProjectsDisplay from "./src/components/projects-display/projects-display.jsx"
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
     path: "/journal",
     element: <Journal />,
     errorElement: <InProgress />,
+  },
+  {
+    path: "/journal-entry/:id",
+    element: <JournalEntry/>,
+    errorElement: <InProgress/>
   },
   {
     path: `${process.env.REACT_APP_JOURNAL_EDITOR_PATH}`,

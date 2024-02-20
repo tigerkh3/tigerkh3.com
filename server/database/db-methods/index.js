@@ -33,6 +33,28 @@ let getAboutMe = (data, callback) => {
   })
 }
 
+let getJournalEntries = (data, callback) => {
+  db.query(`SELECT id, entry_title, TO_CHAR(entry_date, 'Month DD, YYYY') FROM journal`, (err, res) => {
+    if (err) {
+      console.log("db error message, get projects", err)
+      callback(err, null);
+    } else {
+      callback(null, res);
+    }
+  })
+}
+
+let getJournalEntryData = (id, callback) => {
+  db.query(`SELECT entry_title, TO_CHAR(entry_date, 'Month DD, YYYY'), journal_entry FROM journal WHERE id=${id}`, (err, res) => {
+    if (err) {
+      console.log("db error message, readme", err)
+      callback(err, null);
+    } else {
+      callback(null, res);
+    }
+  })
+}
+
 let postJournalEntry = (data, callback) => {
   // console.log(data.title)
   // console.log(data.entry)
@@ -47,9 +69,8 @@ let postJournalEntry = (data, callback) => {
 }
 
 module.exports.getProjects = getProjects;
-
 module.exports.getReadMe = getReadMe;
-
 module.exports.getAboutMe = getAboutMe;
-
 module.exports.postJournalEntry = postJournalEntry;
+module.exports.getJournalEntries = getJournalEntries;
+module.exports.getJournalEntryData = getJournalEntryData;
