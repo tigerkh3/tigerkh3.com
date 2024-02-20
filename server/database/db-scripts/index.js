@@ -27,8 +27,15 @@ db.query('CREATE TABLE projects (id SERIAL, project_name TEXT, web_link TEXT, gi
                     console.log('about me insert err', err)
                   } else {
                     console.log('aboutme insert successful')
+                    db.query('CREATE TABLE journal (id SERIAL, entry_title TEXT, entry_date date not null default CURRENT_DATE, journal_entry TEXT, PRIMARY KEY(id))', (err, res) => {
+                      if (err) {
+                        console.log('journal entry table creation err', err)
+                      } else {
+                        console.log('journal entry table success')
+                        db.end();
+                      }
+                    })
                   }
-                  db.end();
                 })
               }
             })

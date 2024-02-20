@@ -4,30 +4,27 @@ import axios from "axios";
 // import CSS styling and reactstrap components
 import "../../dist/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
 // sample projects database object
 
 // children={sampleRM[0].projReadMe}
 
-function ProjectDetails () {
+function JournalEntry () {
 
   const [markdown, setMarkDown] = useState("")
+  const [entryData, setEntryData] = useState({})
 
   const { id } = useParams()
 
   useEffect( () => {
-    axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_README_EP}/${id}`)
+
+    axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_JOURNAL_ENTRY_DATA_EP}/${id}`)
     .then ( (result) => {
-      console.log('should be our details', result.data)
-      fetch(`${result.data}`)
-      .then((result) => {
-        result.text()
-        .then((text) => {
-          setMarkDown(text)
-        })
-      })
+      console.log('should be our details', result.data);
+      setMarkDown(result.data.journal_entry);
+      setEntryData(result.data);
     })
   }, [id])
 
@@ -42,7 +39,12 @@ function ProjectDetails () {
   }
 
   return (
-    <Container key="project-details-main-parent" className="project-details-main-parent">
+    <Container key="journal-entry-main-parent" className="journal-entry-main-parent">
+      <Row key={`journal-entry-row`} className="journal-entry-row">
+        <h2 key={`journal-entry-date-col`} className="journal-entry journal-entry-date">
+          {entryData.to_char}
+        </h2>
+      </Row>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
@@ -50,9 +52,9 @@ function ProjectDetails () {
              <h1 id={generateSlug(props.children)} {...props}></h1>
            ),
          }}
-         key="project-details-main" className="project-details-main" children={markdown}></ReactMarkdown>
+         key="journal-entry-main" className="journal-entry-main" children={markdown}></ReactMarkdown>
     </Container>
   )
 }
 
-export default ProjectDetails;
+export default JournalEntry;
