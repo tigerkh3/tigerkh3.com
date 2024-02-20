@@ -196,7 +196,6 @@ h1, h2 {
 
 .card-overlay-link-col:hover .link {
   background: #676767;
-  border: solid black 1px;
 }
 
 .project-card-preview-div:hover .card-overlay {
