@@ -464,9 +464,18 @@ h1, h2 {
   max-width: 720px;
 }
 
+.journal-entries-parent-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
 .journal-entries-row {
   padding: 12px;
   font-size: large;
+}
+
+.journal-entries {
+  padding: 0;
 }
 
 .journal-entries-row:hover .journal-entries {

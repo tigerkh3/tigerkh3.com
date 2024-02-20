@@ -23,6 +23,7 @@ function Journal () {
 
   return (
     <Container key="journal-entries-parent" className="journal-entries-parent">
+      <h1 key="journal-entries-parent-heading" className="journal-entries-parent-heading" > Tiger's Engineering Journal </h1>
       <Row key="journal-entries-heading-row" className="journal-entries-heading-row">
         <Col key="journal-entries-heading-title-col" className="journal-entries-heading-col">
           <h2 key="journal-entries-heading-title" className="journal-entries-heading">
