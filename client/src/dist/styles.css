@@ -111,22 +111,11 @@ h1, h2 {
 
 .footer-row {
   padding-top: 12px;
-  font-size: 10px;
+  font-size: 12px;
+  text-align: center;
 }
 
-.footer-tech-stack {
-  text-align: right;
-}
 
-.footer-socials {
-  padding-bottom: 12px;
-}
-
-.footer-socials-img, .footer-tech-stack-img {
-  padding: 0 6px 0 6px;
-  max-height: 30px;
-  max-width: 30px;
-}
 /* -------------------------------------------- */
 
 /* About Me Home CSS */
@@ -270,10 +259,6 @@ h1, h2 {
     bottom: 0%;
     border-radius: 5px;
   }
-
-  .footer-tech-stack, .footer-intro {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -290,10 +275,6 @@ h1, h2 {
     position: absolute;
     bottom: 0%;
     border-radius: 5px;
-  }
-
-  .footer-tech-stack, .footer-intro {
-    text-align: center;
   }
 }
 
