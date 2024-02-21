@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "server-dev": "cd server && node index.js",
-    "client-dev": "npx webpack-dev-server",
+    "start": "cd server && node index.js",
     "build": "npx webpack"
   },
   "repository": {
