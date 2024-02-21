@@ -274,7 +274,7 @@ h1, h2 {
 @media only screen and (max-width: 540px) {
   .card-overlay {
     padding: 20% 0%;
-    max-width: 472px;
+    max-width: 496px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background: black;
@@ -288,10 +288,110 @@ h1, h2 {
   }
 }
 
+@media only screen and (max-width: 528px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 488px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 466px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 454px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .card-overlay {
+    padding: 20% 0%;
+    max-width: 442px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 432px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 463px) {
+  .card-overlay {
+    padding: 12.5% 0%;
+    max-width: 420px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0.3;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   .card-overlay {
     padding: 12.5% 0%;
-    max-width: 358px;
+    max-width: 382px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: white;
@@ -307,8 +407,7 @@ h1, h2 {
 @media only screen and (max-width: 414px) {
   .card-overlay {
     padding: 12.5% 0%;
-    max-width: 342px;
-    max-height: 272px;
+    max-width: 366px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: white;
@@ -337,10 +436,26 @@ h1, h2 {
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .card-overlay {
+    padding: 2.5% 0%;
+    max-width: 343px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .card-overlay {
     padding: 5% 0%;
-    max-width: 303px;
+    max-width: 327px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: white;
@@ -356,7 +471,7 @@ h1, h2 {
 @media only screen and (max-width: 360px) {
   .card-overlay {
     padding: 5% 0%;
-    max-width: 288px;
+    max-width: 312px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: white;
@@ -367,12 +482,25 @@ h1, h2 {
     bottom: 0%;
     border-radius: 5px;
   }
+
+  .card-overlay-link-col {
+    padding: 6px;
+  }
 }
 
 @media only screen and (max-width: 280px) {
+
+  #root {
+    max-width: 280px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
   .card-overlay {
     padding: 0% 0%;
-    max-width: 208px;
+    max-width: 232px;
     overflow: scroll;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;

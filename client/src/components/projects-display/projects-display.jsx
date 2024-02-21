@@ -17,7 +17,6 @@ function ProjectsDisplay (props) {
     // call to our server
     axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_PROJECTS_EP}`)
     .then ( (result) => {
-      console.log(result.data);
       setProjectData(result.data);
     })
   }, [false])

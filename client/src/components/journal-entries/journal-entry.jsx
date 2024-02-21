@@ -22,7 +22,6 @@ function JournalEntry () {
 
     axios.get(`${process.env.REACT_APP_SERVER}/${process.env.REACT_APP_JOURNAL_ENTRY_DATA_EP}/${id}`)
     .then ( (result) => {
-      console.log('should be our details', result.data);
       setMarkDown(result.data.journal_entry);
       setEntryData(result.data);
     })
