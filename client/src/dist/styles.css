@@ -18,7 +18,7 @@ h1, h2 {
   color: white;
   font-family: 'Montserrat';
   min-height: 100vh;
-  padding: 0 12px;
+  padding: 0px 12px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -29,6 +29,7 @@ h1, h2 {
 
 .home-parent {
   min-width: 100%;
+  padding: 0;
 }
 
 /* -------------------------------------------- */
