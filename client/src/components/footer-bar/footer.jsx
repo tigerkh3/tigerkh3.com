@@ -11,10 +11,10 @@ function Footer () {
         <Row>
           <Col >
             <div key="footer-intro" className="footer-row footer-intro">
-              tigerkh3.io | Built by Tiger Hong
+              tigerkh3.com | Built by Tiger Hong
             </div>
           </Col>
-          <Col xs="7">
+          <Col xs="12" sm="6">
             <div key="footer-tech-stack" className="footer-row footer-tech-stack">
               Built Using |
               <img key="footer-tech-stack-js" className="footer-tech-stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
