@@ -270,6 +270,10 @@ h1, h2 {
     bottom: 0%;
     border-radius: 5px;
   }
+
+  .footer-tech-stack, .footer-intro {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -286,6 +290,10 @@ h1, h2 {
     position: absolute;
     bottom: 0%;
     border-radius: 5px;
+  }
+
+  .footer-tech-stack, .footer-intro {
+    text-align: center;
   }
 }
 
@@ -418,6 +426,10 @@ h1, h2 {
     position: absolute;
     bottom: 0%;
     border-radius: 5px;
+  }
+
+  .footer-tech-stack, .footer-intro {
+    text-align: center;
   }
 }
 
@@ -588,8 +600,9 @@ h1, h2 {
 }
 
 .journal-entries-parent {
-  margin-top: 60px;
+  margin-top: 24px;
   max-width: 720px;
+  min-height: 65vh;
 }
 
 .journal-entries-parent-heading {
