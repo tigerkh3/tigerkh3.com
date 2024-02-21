@@ -33,8 +33,8 @@ function AboutMeHome () {
         <Row key="about-me-home-socials" className="about-me-home-description-row">
           <h5 key="about-me-home-socials-heading" className="about-me-home-description"> If you like what you see and would like to reach out, find me below!</h5>
           <h5 key="about-me-home-socials-links" className="about-me-home-description">
-            <img key="footer-socials-linkedin" className="footer-socials-img" src={linkedin}></img>
-            <img key="footer-socials-gh" className="footer-socials-img" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png"></img>
+            <img key="about-me-socials-linkedin" className="about-me-socials-img" src={linkedin}></img>
+            <img key="about-me-socials-gh" className="about-me-socials-img" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png"></img>
           </h5>
         </Row>
       </Row>
